@@ -1,3 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 p {
     color: darkblue;
+}
+
+header {
+    height: 46px;
+}
+
+#prenom-nom {
+    float: left;
+}
+
+#top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #153d63;
+}
+
+#top-nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    padding: 14px 16px;
+    transition: border-bottom-color 0.5s;
+    border-top: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid transparent;
+}
+
+#top-nav ul li a:hover {
+    border-bottom-color: #4c94d8;
+}
+
+#top-nav ul li a.active {
+    background-color: #04AA6D;
 }
