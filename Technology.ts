@@ -1,46 +1,52 @@
 /**
  * A technology like a programming language or a piece of software
  */
-var Technology = /** @class */ (function () {
+export class Technology {
+    private name: string;
+    private src: string;
+
     /**
      * Creates a technology
      * @param name name of the technology
      * @param src source of the image of the technology
      */
-    function Technology(name, src) {
+    constructor(name: string, src: string) {
         this.name = name;
         this.src = src;
     }
+
     /**
      * Gets a card with only the image of the technology
      * @return the card
      */
-    Technology.prototype.getSmallCard = function () {
-        var smallCard = document.createElement("div");
+    public getSmallCard(): HTMLDivElement {
+        let smallCard: HTMLDivElement = document.createElement("div");
         smallCard.classList.add("technology-small-card");
-        var image = document.createElement("img");
+        let image: HTMLImageElement = document.createElement("img");
         image.src = this.src;
         image.alt = this.name;
         image.title = this.name;
         smallCard.appendChild(image);
         return smallCard;
-    };
+    }
+
     /**
      * Gets a card with the name and the image of the technology
      * @return the card
      */
-    Technology.prototype.getBigCard = function () {
-        var bigCard = document.createElement("div");
+    public getBigCard(): HTMLDivElement {
+        let bigCard: HTMLDivElement = document.createElement("div");
         bigCard.classList.add("technology-big-card");
-        var name = document.createElement("p");
+
+        let name: HTMLParagraphElement = document.createElement("p");
         name.innerText = this.name;
         bigCard.appendChild(name);
-        var image = document.createElement("img");
+
+        let image: HTMLImageElement = document.createElement("img");
         image.src = this.src;
         image.alt = this.name;
         bigCard.appendChild(image);
+
         return bigCard;
-    };
-    return Technology;
-}());
-export { Technology };
+    }
+}
