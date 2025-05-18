@@ -72,3 +72,16 @@ h1 {
 .separator {
     margin: 0 10px;
 }
+
+footer {
+    color: #ffffff;
+    background-color: #153d63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10%;
+}
+
+footer img {
+    height: 3rem;
+}
