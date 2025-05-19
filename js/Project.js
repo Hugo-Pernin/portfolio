@@ -45,11 +45,11 @@ var Project = /** @class */ (function () {
         description.innerText = this.description;
         card.appendChild(description);
         if (this.linkHref != null) {
-            var link = document.createElement("a");
-            link.innerText = this.linkText;
-            link.href = this.linkHref;
-            link.target = "_blank";
-            card.appendChild(link);
+            var link_1 = document.createElement("a");
+            link_1.innerText = this.linkText;
+            link_1.href = this.linkHref;
+            link_1.target = "_blank";
+            card.appendChild(link_1);
         }
         var technologies = document.createElement("div");
         technologies.classList.add("technologies");
