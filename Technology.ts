@@ -45,6 +45,7 @@ export class Technology {
         let image: HTMLImageElement = document.createElement("img");
         image.src = this.src;
         image.alt = this.name;
+        image.title = this.name;
         bigCard.appendChild(image);
 
         return bigCard;
