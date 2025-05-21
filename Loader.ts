@@ -17,21 +17,78 @@ export class Loader {
         this.projects = [];
         this.categories = [];
 
-        let html: Technology = new Technology("HTML", "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg");
-        let css: Technology = new Technology("CSS", "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg");
-        let typescript: Technology = new Technology("TypeScript", "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg");
-        let webstorm: Technology = new Technology("WebStorm", "https://resources.jetbrains.com/storage/products/company/brand/logos/WebStorm_icon.svg")
+        let python: Technology = new Technology("Python", "img/python.svg");
+        let java: Technology = new Technology("Java", "img/java.svg");
+        let csharp: Technology = new Technology("C#", "img/c_sharp.svg");
+        let c: Technology = new Technology("C", "img/c.svg");
+        let cplusplus: Technology = new Technology("C++", "img/c_plus_plus.svg");
+        let assembly: Technology = new Technology("Langage assembleur", "img/assembly.png");
+        let nodered: Technology = new Technology("Node-RED", "img/node-red.png");
+        let pycharm: Technology = new Technology("PyCharm", "img/pycharm.svg");
+        let visualstudio: Technology = new Technology("Visual Studio", "img/visual_studio.svg");
+        let visualstudiocode: Technology = new Technology("Visual Studio Code", "img/visual_studio_code.svg");
+        let arduino: Technology = new Technology("Arduino", "img/arduino.svg");
 
-        let assembly: Technology = new Technology("Langage assembleur", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdA_2Vi350-blMARDU4bOdXkXaanfyYmPVg&s");
-        let vscode: Technology = new Technology("Visual Studio Code", "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg");
+        let androidstudio: Technology = new Technology("Android Studio", "img/android_studio.svg");
 
-        let java: Technology = new Technology("Java", "https://upload.wikimedia.org/wikipedia/fr/2/2e/Java_Logo.svg");
-        let androidstudio: Technology = new Technology("Android Studio", "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Studio_Logo_2024.svg");
+        let html: Technology = new Technology("HTML", "img/html.svg");
+        let css: Technology = new Technology("CSS", "img/css.svg");
+        let javascript: Technology = new Technology("JavaScript", "img/javascript.svg");
+        let typescript: Technology = new Technology("TypeScript", "img/typescript.svg");
+        let php: Technology = new Technology("PHP", "img/php.svg");
+        let webstorm: Technology = new Technology("WebStorm", "img/webstorm.svg");
+        let phpstorm: Technology = new Technology("PHPStorm", "img/phpstorm.svg");
 
-        let python: Technology = new Technology("Python", "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg");
-        let pycharm: Technology = new Technology("PyCharm", "https://resources.jetbrains.com/storage/products/company/brand/logos/PyCharm_icon.svg");
+        let mysql: Technology = new Technology("MySQL", "img/mysql.png");
+        let plsql: Technology = new Technology("PL/SQL", "img/plsql.svg");
+        let mariadb: Technology = new Technology("MariaDB", "img/mariadb.svg");
+        let sqlite: Technology = new Technology("SQLite", "img/sqlite.svg");
+        let mysqlworkbench: Technology = new Technology("MySQL Workbench", "img/mysql_workbench.svg");
+        let sqldeveloper: Technology = new Technology("SQL Developer", "img/sql_developer.svg");
 
-        this.technologies.push(html, css, typescript, webstorm, assembly, vscode, java, androidstudio, python, pycharm);
+        let unix: Technology = new Technology("Unix", "img/unix.svg");
+        let docker: Technology = new Technology("Docker", "img/docker.svg");
+        let virtualbox: Technology = new Technology("VirtualBox", "img/virtualbox.svg");
+
+        let uml: Technology = new Technology("UML", "img/uml.svg");
+        let visualparadigm: Technology = new Technology("Visual Paradigm", "img/visual_paradigm.png");
+
+        let git: Technology = new Technology("Git", "img/git.svg");
+        let teams: Technology = new Technology("Teams", "img/teams.svg");
+
+        let wordexcelpowerpoint: Technology = new Technology("Word, Excel & Powerpoint", "img/word_excel_powerpoint.svg");
+        let googledocssheetsslides: Technology = new Technology("Google Docs, Sheets & Slides", "img/google_docs_sheets_slides.png");
+
+        this.technologies.push(python, java, csharp, c, cplusplus, assembly, nodered, pycharm, visualstudio,
+            visualstudiocode, arduino, androidstudio, html, css, javascript, typescript, php, webstorm, phpstorm,
+            mysql, plsql, mariadb, sqlite, mysqlworkbench, sqldeveloper, unix, docker, virtualbox, uml,
+            visualparadigm, git, teams, wordexcelpowerpoint, googledocssheetsslides);
+
+        let applicationDevelopment: TechnologyCategory = new TechnologyCategory("Développement d'applications");
+        applicationDevelopment.addTechnologies([python, java, csharp, c, cplusplus, assembly, nodered, pycharm, visualstudio, visualstudiocode, arduino]);
+
+        let mobileDevelopment: TechnologyCategory = new TechnologyCategory("Développement mobile");
+        mobileDevelopment.addTechnologies([java, androidstudio]);
+
+        let webDevelopment: TechnologyCategory = new TechnologyCategory("Développement web");
+        webDevelopment.addTechnologies([html, css, javascript, typescript, php, webstorm, phpstorm]);
+
+        let databases: TechnologyCategory = new TechnologyCategory("Bases de données");
+        databases.addTechnologies([mysql, plsql, mariadb, sqlite, mysqlworkbench, sqldeveloper]);
+
+        let others: TechnologyCategory = new TechnologyCategory("Autres");
+        others.addTechnologies([unix, docker, virtualbox]);
+
+        let conception: TechnologyCategory = new TechnologyCategory("Conception");
+        conception.addTechnologies([uml, visualparadigm]);
+
+        let collaboration: TechnologyCategory = new TechnologyCategory("Collaboration");
+        collaboration.addTechnologies([git, teams]);
+
+        let bureautique: TechnologyCategory = new TechnologyCategory("Bureautique");
+        bureautique.addTechnologies([wordexcelpowerpoint, googledocssheetsslides]);
+
+        this.categories.push(applicationDevelopment, mobileDevelopment, webDevelopment, databases, others, conception, collaboration, bureautique);
 
         let portfolio: Project = new Project("Portfolio", "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !", "Dépôt GitHub", "https://github.com/Hugo-Pernin/portfolio/");
         portfolio.addLanguage(html);
@@ -41,7 +98,7 @@ export class Loader {
 
         let nesweeper: Project = new Project("NESweeper", "Démineur jouable sur Nintendo Entertainment System.", "Page itch.io", "https://hugo70.itch.io/nesweeper");
         nesweeper.addLanguage(assembly);
-        nesweeper.addSoftware(vscode);
+        nesweeper.addSoftware(visualstudiocode);
 
         let cliofy: Project = new Project("Cliofy", "Application mobile utilisant l'API web de Spotify.");
         cliofy.addLanguage(java);
@@ -56,25 +113,6 @@ export class Loader {
         projecteuler.addSoftware(pycharm);
 
         this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler);
-
-        let applicationDevelopment: TechnologyCategory = new TechnologyCategory("Développement d'applications");
-        applicationDevelopment.addTechnology(python);
-        applicationDevelopment.addTechnology(java);
-        applicationDevelopment.addTechnology(assembly);
-        applicationDevelopment.addTechnology(pycharm);
-        applicationDevelopment.addTechnology(vscode);
-
-        let mobileDevelopment: TechnologyCategory = new TechnologyCategory("Développement mobile");
-        mobileDevelopment.addTechnology(java);
-        mobileDevelopment.addTechnology(androidstudio);
-
-        let webDevelopment: TechnologyCategory = new TechnologyCategory("Développement web");
-        webDevelopment.addTechnology(html);
-        webDevelopment.addTechnology(css);
-        webDevelopment.addTechnology(typescript);
-        webDevelopment.addTechnology(webstorm);
-
-        this.categories.push(applicationDevelopment, mobileDevelopment, webDevelopment);
     }
 
     /**
