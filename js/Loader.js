@@ -1,5 +1,6 @@
 import { Technology } from "./Technology.js";
 import { Project } from "./Project.js";
+import { TechnologyCategory } from "./TechnologyCategory.js";
 /**
  * Class that loads technologies and projects
  */
@@ -7,6 +8,7 @@ var Loader = /** @class */ (function () {
     function Loader() {
         this.technologies = [];
         this.projects = [];
+        this.categories = [];
         var html = new Technology("HTML", "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg");
         var css = new Technology("CSS", "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg");
         var typescript = new Technology("TypeScript", "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg");
@@ -36,6 +38,21 @@ var Loader = /** @class */ (function () {
         projecteuler.addLanguage(python);
         projecteuler.addSoftware(pycharm);
         this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler);
+        var applicationDevelopment = new TechnologyCategory("Développement d'applications");
+        applicationDevelopment.addTechnology(python);
+        applicationDevelopment.addTechnology(java);
+        applicationDevelopment.addTechnology(assembly);
+        applicationDevelopment.addTechnology(pycharm);
+        applicationDevelopment.addTechnology(vscode);
+        var mobileDevelopment = new TechnologyCategory("Développement mobile");
+        mobileDevelopment.addTechnology(java);
+        mobileDevelopment.addTechnology(androidstudio);
+        var webDevelopment = new TechnologyCategory("Développement web");
+        webDevelopment.addTechnology(html);
+        webDevelopment.addTechnology(css);
+        webDevelopment.addTechnology(typescript);
+        webDevelopment.addTechnology(webstorm);
+        this.categories.push(applicationDevelopment, mobileDevelopment, webDevelopment);
     }
     /**
      * Returns the instance of Loader or creates one if it doesn't exist
@@ -60,6 +77,9 @@ var Loader = /** @class */ (function () {
      */
     Loader.prototype.getProjects = function () {
         return this.projects;
+    };
+    Loader.prototype.getCategories = function () {
+        return this.categories;
     };
     return Loader;
 }());
