@@ -37,8 +37,7 @@ var Technology = /** @class */ (function () {
         bigCard.appendChild(name);
         var image = document.createElement("img");
         image.src = this.src;
-        image.alt = this.name;
-        image.title = this.name;
+        image.alt = "";
         bigCard.appendChild(image);
         return bigCard;
     };
