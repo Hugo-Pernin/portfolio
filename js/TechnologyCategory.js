@@ -11,11 +11,11 @@ var TechnologyCategory = /** @class */ (function () {
         this.technologies = [];
     }
     /**
-     * Adds a technology to the technologies list
-     * @param technology technology to add
+     * Adds technologies to the technologies list
+     * @param technologies technologies to add
      */
-    TechnologyCategory.prototype.addTechnology = function (technology) {
-        this.technologies.push(technology);
+    TechnologyCategory.prototype.addTechnologies = function (technologies) {
+        this.technologies = this.technologies.concat(technologies);
     };
     /**
      * Gets the card of the category which displays its name, and its technologies logos and names
@@ -28,7 +28,6 @@ var TechnologyCategory = /** @class */ (function () {
         name.innerText = this.name;
         card.appendChild(name);
         var technologies = document.createElement("div");
-        technologies.classList.add("technologies");
         for (var _i = 0, _a = this.technologies; _i < _a.length; _i++) {
             var technology = _a[_i];
             technologies.appendChild(technology.getBigCard());

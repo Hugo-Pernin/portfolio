@@ -37,7 +37,6 @@ export class TechnologyCategory {
         card.appendChild(name);
 
         let technologies: HTMLDivElement = document.createElement("div");
-        //technologies.classList.add("technologies");
         for (let technology of this.technologies) {
             technologies.appendChild(technology.getBigCard());
         }
