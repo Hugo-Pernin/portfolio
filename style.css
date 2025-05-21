@@ -4,6 +4,10 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    padding: 1%;
+}
+
 header {
     height: 46px;
 }
@@ -64,6 +68,21 @@ h1 {
     height: 50px;
 }
 
+.technology-big-card {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin: 0 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+}
+
+.technology-big-card img {
+    height: 50px;
+}
+
 .technologies {
     display: flex;
     align-items: center;
@@ -84,4 +103,19 @@ footer {
 
 footer img {
     height: 3rem;
+}
+
+.skill-category {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 0 1%;
+    padding: 1%;
+
+}
+
+.skill-card {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 1%;
+    display: inline-block;
 }
