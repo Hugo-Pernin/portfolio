@@ -17,11 +17,11 @@ export class TechnologyCategory {
     }
 
     /**
-     * Adds a technology to the technologies list
-     * @param technology technology to add
+     * Adds technologies to the technologies list
+     * @param technologies technologies to add
      */
-    public addTechnology(technology: Technology) {
-        this.technologies.push(technology);
+    public addTechnologies(technologies: Technology[]) {
+        this.technologies = this.technologies.concat(technologies);
     }
 
     /**
@@ -37,7 +37,7 @@ export class TechnologyCategory {
         card.appendChild(name);
 
         let technologies: HTMLDivElement = document.createElement("div");
-        technologies.classList.add("technologies");
+        //technologies.classList.add("technologies");
         for (let technology of this.technologies) {
             technologies.appendChild(technology.getBigCard());
         }
