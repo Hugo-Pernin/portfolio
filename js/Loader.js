@@ -85,7 +85,12 @@ var Loader = /** @class */ (function () {
         projecteuler.addLink(new Link("Profil", "https://projecteuler.net/progress=Hugo_Pernin"));
         projecteuler.addLanguage(python);
         projecteuler.addSoftware(pycharm);
-        this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler);
+        var sae203 = new Project("Mise en place d'un serveur", "Sur une machine virtuelle VirtualBox, installation de Windows Server, d’un serveur web Apache, d’une base de données MySQL, d’un système de partage de fichiers et de Git, accessibles depuis la machine physique.");
+        sae203.addLink(new Link("Vidéo de présentation", "https://youtu.be/XkLdKJfYP1A"));
+        sae203.addSoftware(virtualbox);
+        sae203.addSoftware(xampp);
+        sae203.addSoftware(mysql);
+        this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler, sae203);
     }
     /**
      * Returns the instance of Loader or creates one if it doesn't exist
