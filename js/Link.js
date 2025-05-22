@@ -19,12 +19,14 @@ var Link = /** @class */ (function () {
         var card = document.createElement("div");
         card.classList.add("link-card");
         var link = document.createElement("a");
-        link.innerHTML = this.text;
         link.href = this.href;
         link.target = "_blank";
+        var text = document.createElement("p");
+        text.innerText = this.text;
         var image = document.createElement("img");
         image.src = "img/new_tab.svg";
         image.alt = "";
+        link.appendChild(text);
         link.appendChild(image);
         card.appendChild(link);
         return card;
