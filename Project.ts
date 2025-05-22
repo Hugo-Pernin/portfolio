@@ -1,4 +1,5 @@
-import {Technology} from "./Technology";
+import {Technology} from "./Technology.js";
+import {Link} from "./Link.js";
 
 /**
  * A project
@@ -6,8 +7,7 @@ import {Technology} from "./Technology";
 export class Project {
     private name: string;
     private description: string;
-    private linkText: string;
-    private linkHref: string;
+    private links: Link[];
     private languagesList: Technology[];
     private softwareList: Technology[];
 
@@ -15,16 +15,21 @@ export class Project {
      * Creates a project
      * @param name name of the project
      * @param description description of the project
-     * @param linkText text of the link
-     * @param linkHref url of the redirection of the link
      */
-    constructor(name: string, description: string, linkText?: string, linkHref?: string) {
+    constructor(name: string, description: string) {
         this.name = name;
         this.description = description;
-        this.linkText = linkText;
-        this.linkHref = linkHref;
+        this.links = [];
         this.languagesList = [];
         this.softwareList = [];
+    }
+
+    /**
+     * Adds a link to the links list
+     * @param link link to add
+     */
+    public addLink(link: Link) {
+        this.links.push(link);
     }
 
     /**
@@ -59,12 +64,8 @@ export class Project {
         description.innerText = this.description;
         card.appendChild(description);
 
-        if (this.linkHref != null) {
-            let link: HTMLAnchorElement = document.createElement("a");
-            link.innerText = this.linkText;
-            link.href = this.linkHref;
-            link.target = "_blank";
-            card.appendChild(link);
+        for (let link of this.links) {
+            card.appendChild(link.getCard());
         }
 
         let technologies: HTMLDivElement = document.createElement("div");

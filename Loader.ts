@@ -1,6 +1,7 @@
 import {Technology} from "./Technology.js";
 import {Project} from "./Project.js";
 import {TechnologyCategory} from "./TechnologyCategory.js";
+import {Link} from "./Link.js";
 
 /**
  * Class that loads technologies and projects
@@ -90,13 +91,15 @@ export class Loader {
 
         this.categories.push(applicationDevelopment, mobileDevelopment, webDevelopment, databases, others, conception, collaboration, bureautique);
 
-        let portfolio: Project = new Project("Portfolio", "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !", "Dépôt GitHub", "https://github.com/Hugo-Pernin/portfolio/");
+        let portfolio: Project = new Project("Portfolio", "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !");
+        portfolio.addLink(new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/portfolio/"));
         portfolio.addLanguage(html);
         portfolio.addLanguage(css);
         portfolio.addLanguage(typescript);
         portfolio.addSoftware(webstorm);
 
-        let nesweeper: Project = new Project("NESweeper", "Démineur jouable sur Nintendo Entertainment System.", "Page itch.io", "https://hugo70.itch.io/nesweeper");
+        let nesweeper: Project = new Project("NESweeper", "Démineur jouable sur Nintendo Entertainment System.");
+        nesweeper.addLink(new Link("Page itch.io", "https://hugo70.itch.io/nesweeper"));
         nesweeper.addLanguage(assembly);
         nesweeper.addSoftware(visualstudiocode);
 
@@ -104,11 +107,14 @@ export class Loader {
         cliofy.addLanguage(java);
         cliofy.addSoftware(androidstudio);
 
-        let lesdenaises: Project = new Project("Site web de la ferme Les Denaises", "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale.", "Lien vers le site web", "https://www.lesdenaises.fr/");
+        let lesdenaises: Project = new Project("Site web de la ferme Les Denaises", "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale.");
+        lesdenaises.addLink(new Link("Lien vers le site web", "https://www.lesdenaises.fr/"));
         lesdenaises.addLanguage(html);
         lesdenaises.addLanguage(css);
 
-        let projecteuler: Project = new Project("Résolution de problèmes mathématiques sur Project Euler", "Création de programmes Python pour résoudre des problèmes du site web Project Euler, qui répertorie des problèmes mathématiques conçus pour être résolus avec l'informatique.", "Dépôt GitHub", "https://github.com/Hugo-Pernin/project-euler/");
+        let projecteuler: Project = new Project("Résolution de problèmes mathématiques sur Project Euler", "Création de programmes Python pour résoudre des problèmes du site web Project Euler, qui répertorie des problèmes mathématiques conçus pour être résolus avec l'informatique.");
+        projecteuler.addLink(new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/project-euler/"));
+        projecteuler.addLink(new Link("Profil", "https://projecteuler.net/progress=Hugo_Pernin"));
         projecteuler.addLanguage(python);
         projecteuler.addSoftware(pycharm);
 

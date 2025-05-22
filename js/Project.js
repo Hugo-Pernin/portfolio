@@ -6,17 +6,21 @@ var Project = /** @class */ (function () {
      * Creates a project
      * @param name name of the project
      * @param description description of the project
-     * @param linkText text of the link
-     * @param linkHref url of the redirection of the link
      */
-    function Project(name, description, linkText, linkHref) {
+    function Project(name, description) {
         this.name = name;
         this.description = description;
-        this.linkText = linkText;
-        this.linkHref = linkHref;
+        this.links = [];
         this.languagesList = [];
         this.softwareList = [];
     }
+    /**
+     * Adds a link to the links list
+     * @param link link to add
+     */
+    Project.prototype.addLink = function (link) {
+        this.links.push(link);
+    };
     /**
      * Adds a language to the languages list
      * @param language language to add
@@ -44,25 +48,22 @@ var Project = /** @class */ (function () {
         var description = document.createElement("p");
         description.innerText = this.description;
         card.appendChild(description);
-        if (this.linkHref != null) {
-            var link_1 = document.createElement("a");
-            link_1.innerText = this.linkText;
-            link_1.href = this.linkHref;
-            link_1.target = "_blank";
-            card.appendChild(link_1);
+        for (var _i = 0, _a = this.links; _i < _a.length; _i++) {
+            var link = _a[_i];
+            card.appendChild(link.getCard());
         }
         var technologies = document.createElement("div");
         technologies.classList.add("technologies");
-        for (var _i = 0, _a = this.languagesList; _i < _a.length; _i++) {
-            var language = _a[_i];
+        for (var _b = 0, _c = this.languagesList; _b < _c.length; _b++) {
+            var language = _c[_b];
             technologies.appendChild(language.getSmallCard());
         }
         var separator = document.createElement("p");
         separator.classList.add("separator");
         separator.innerText = "|";
         technologies.appendChild(separator);
-        for (var _b = 0, _c = this.softwareList; _b < _c.length; _b++) {
-            var software = _c[_b];
+        for (var _d = 0, _e = this.softwareList; _d < _e.length; _d++) {
+            var software = _e[_d];
             technologies.appendChild(software.getSmallCard());
         }
         card.appendChild(technologies);
