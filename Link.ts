@@ -21,12 +21,18 @@ export class Link {
      */
     public getCard(): HTMLDivElement {
         let card: HTMLDivElement = document.createElement("div");
+        card.classList.add("link-card");
 
         let link: HTMLAnchorElement = document.createElement("a");
         link.innerHTML = this.text;
         link.href = this.href;
         link.target = "_blank";
 
+        let image: HTMLImageElement = document.createElement("img");
+        image.src = "img/new_tab.svg";
+        image.alt = "";
+
+        link.appendChild(image);
         card.appendChild(link);
 
         return card;
