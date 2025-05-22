@@ -64,9 +64,12 @@ export class Project {
         description.innerText = this.description;
         card.appendChild(description);
 
+        let links: HTMLDivElement = document.createElement("div");
+        links.classList.add("links");
         for (let link of this.links) {
-            card.appendChild(link.getCard());
+            links.appendChild(link.getCard());
         }
+        card.appendChild(links);
 
         let technologies: HTMLDivElement = document.createElement("div");
         technologies.classList.add("technologies");

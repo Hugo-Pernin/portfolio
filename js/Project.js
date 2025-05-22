@@ -48,10 +48,13 @@ var Project = /** @class */ (function () {
         var description = document.createElement("p");
         description.innerText = this.description;
         card.appendChild(description);
+        var links = document.createElement("div");
+        links.classList.add("links");
         for (var _i = 0, _a = this.links; _i < _a.length; _i++) {
             var link = _a[_i];
-            card.appendChild(link.getCard());
+            links.appendChild(link.getCard());
         }
+        card.appendChild(links);
         var technologies = document.createElement("div");
         technologies.classList.add("technologies");
         for (var _b = 0, _c = this.languagesList; _b < _c.length; _b++) {
