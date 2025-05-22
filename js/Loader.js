@@ -29,6 +29,7 @@ var Loader = /** @class */ (function () {
         var php = new Technology("PHP", "img/php.svg");
         var webstorm = new Technology("WebStorm", "img/webstorm.svg");
         var phpstorm = new Technology("PHPStorm", "img/phpstorm.svg");
+        var xampp = new Technology("XAMPP", "img/xampp.png");
         var mysql = new Technology("MySQL", "img/mysql.png");
         var plsql = new Technology("PL/SQL", "img/plsql.svg");
         var mariadb = new Technology("MariaDB", "img/mariadb.svg");
@@ -50,7 +51,7 @@ var Loader = /** @class */ (function () {
         var mobileDevelopment = new TechnologyCategory("Développement mobile");
         mobileDevelopment.addTechnologies([java, androidstudio]);
         var webDevelopment = new TechnologyCategory("Développement web");
-        webDevelopment.addTechnologies([html, css, javascript, typescript, php, webstorm, phpstorm]);
+        webDevelopment.addTechnologies([html, css, javascript, typescript, php, webstorm, phpstorm, xampp]);
         var databases = new TechnologyCategory("Bases de données");
         databases.addTechnologies([mysql, plsql, mariadb, sqlite, mysqlworkbench, sqldeveloper]);
         var others = new TechnologyCategory("Autres");

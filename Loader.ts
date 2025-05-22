@@ -39,6 +39,7 @@ export class Loader {
         let php: Technology = new Technology("PHP", "img/php.svg");
         let webstorm: Technology = new Technology("WebStorm", "img/webstorm.svg");
         let phpstorm: Technology = new Technology("PHPStorm", "img/phpstorm.svg");
+        let xampp: Technology = new Technology("XAMPP", "img/xampp.png");
 
         let mysql: Technology = new Technology("MySQL", "img/mysql.png");
         let plsql: Technology = new Technology("PL/SQL", "img/plsql.svg");
@@ -72,7 +73,7 @@ export class Loader {
         mobileDevelopment.addTechnologies([java, androidstudio]);
 
         let webDevelopment: TechnologyCategory = new TechnologyCategory("Développement web");
-        webDevelopment.addTechnologies([html, css, javascript, typescript, php, webstorm, phpstorm]);
+        webDevelopment.addTechnologies([html, css, javascript, typescript, php, webstorm, phpstorm, xampp]);
 
         let databases: TechnologyCategory = new TechnologyCategory("Bases de données");
         databases.addTechnologies([mysql, plsql, mariadb, sqlite, mysqlworkbench, sqldeveloper]);
