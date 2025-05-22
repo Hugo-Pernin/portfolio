@@ -3,7 +3,7 @@ import {TechnologyCategory} from "./TechnologyCategory.js";
 
 let loader: Loader = Loader.getInstance()
 
-let categories: TechnologyCategory[] = loader.getCategories();
+let categories: TechnologyCategory[] = loader.getTechnologyCategories();
 
 let categoriesDiv: HTMLElement = document.getElementById("langages-et-logiciels");
 

@@ -111,7 +111,11 @@ var Loader = /** @class */ (function () {
     Loader.prototype.getProjects = function () {
         return this.projects;
     };
-    Loader.prototype.getCategories = function () {
+    /**
+     * Returns the list of technology categories
+     * @return the list of technology categories
+     */
+    Loader.prototype.getTechnologyCategories = function () {
         return this.categories;
     };
     return Loader;

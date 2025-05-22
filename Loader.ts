@@ -149,7 +149,11 @@ export class Loader {
         return this.projects;
     }
 
-    public getCategories(): TechnologyCategory[] {
+    /**
+     * Returns the list of technology categories
+     * @return the list of technology categories
+     */
+    public getTechnologyCategories(): TechnologyCategory[] {
         return this.categories;
     }
 }
