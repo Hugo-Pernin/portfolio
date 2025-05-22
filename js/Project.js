@@ -11,8 +11,8 @@ var Project = /** @class */ (function () {
         this.name = name;
         this.description = description;
         this.links = [];
-        this.languagesList = [];
-        this.softwareList = [];
+        this.languages = [];
+        this.software = [];
     }
     /**
      * Adds links to the links list
@@ -26,14 +26,14 @@ var Project = /** @class */ (function () {
      * @param languages languages to add
      */
     Project.prototype.addLanguages = function (languages) {
-        this.languagesList = this.languagesList.concat(languages);
+        this.languages = this.languages.concat(languages);
     };
     /**
      * Adds software to the software list
      * @param software software to add
      */
     Project.prototype.addSoftware = function (software) {
-        this.softwareList = this.softwareList.concat(software);
+        this.software = this.software.concat(software);
     };
     /**
      * Gets the card of the project which displays its name, description, link, languages and software
@@ -57,7 +57,7 @@ var Project = /** @class */ (function () {
         card.appendChild(links);
         var technologies = document.createElement("div");
         technologies.classList.add("technologies");
-        for (var _b = 0, _c = this.languagesList; _b < _c.length; _b++) {
+        for (var _b = 0, _c = this.languages; _b < _c.length; _b++) {
             var language = _c[_b];
             technologies.appendChild(language.getSmallCard());
         }
@@ -65,7 +65,7 @@ var Project = /** @class */ (function () {
         separator.classList.add("separator");
         separator.innerText = "|";
         technologies.appendChild(separator);
-        for (var _d = 0, _e = this.softwareList; _d < _e.length; _d++) {
+        for (var _d = 0, _e = this.software; _d < _e.length; _d++) {
             var software = _e[_d];
             technologies.appendChild(software.getSmallCard());
         }

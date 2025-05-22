@@ -8,8 +8,8 @@ export class Project {
     private name: string;
     private description: string;
     private links: Link[];
-    private languagesList: Technology[];
-    private softwareList: Technology[];
+    private languages: Technology[];
+    private software: Technology[];
 
     /**
      * Creates a project
@@ -20,8 +20,8 @@ export class Project {
         this.name = name;
         this.description = description;
         this.links = [];
-        this.languagesList = [];
-        this.softwareList = [];
+        this.languages = [];
+        this.software = [];
     }
 
     /**
@@ -37,7 +37,7 @@ export class Project {
      * @param languages languages to add
      */
     public addLanguages(languages: Technology[]): void {
-        this.languagesList = this.languagesList.concat(languages);
+        this.languages = this.languages.concat(languages);
     }
 
     /**
@@ -45,7 +45,7 @@ export class Project {
      * @param software software to add
      */
     public addSoftware(software: Technology[]): void {
-        this.softwareList = this.softwareList.concat(software);
+        this.software = this.software.concat(software);
     }
 
     /**
@@ -73,14 +73,14 @@ export class Project {
 
         let technologies: HTMLDivElement = document.createElement("div");
         technologies.classList.add("technologies");
-        for (let language of this.languagesList) {
+        for (let language of this.languages) {
             technologies.appendChild(language.getSmallCard());
         }
         let separator: HTMLParagraphElement = document.createElement("p");
         separator.classList.add("separator");
         separator.innerText = "|";
         technologies.appendChild(separator);
-        for (let software of this.softwareList) {
+        for (let software of this.software) {
             technologies.appendChild(software.getSmallCard());
         }
 
