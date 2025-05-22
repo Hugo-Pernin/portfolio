@@ -148,10 +148,10 @@ footer {
     background-color: #4c94d8;
 }
 
-.job-card, .qualification-card {
+.job-card, .qualification-card, .certification-card {
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 1%;
-    margin: 1%;
+    margin: 1% auto;
     width: 50%;
 }
