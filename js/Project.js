@@ -15,25 +15,25 @@ var Project = /** @class */ (function () {
         this.softwareList = [];
     }
     /**
-     * Adds a link to the links list
-     * @param link link to add
+     * Adds links to the links list
+     * @param links links to add
      */
-    Project.prototype.addLink = function (link) {
-        this.links.push(link);
+    Project.prototype.addLinks = function (links) {
+        this.links = this.links.concat(links);
     };
     /**
-     * Adds a language to the languages list
-     * @param language language to add
+     * Adds languages to the languages list
+     * @param languages languages to add
      */
-    Project.prototype.addLanguage = function (language) {
-        this.languagesList.push(language);
+    Project.prototype.addLanguages = function (languages) {
+        this.languagesList = this.languagesList.concat(languages);
     };
     /**
-     * Adds a piece of software to the software list
-     * @param software piece of software to add
+     * Adds software to the software list
+     * @param software software to add
      */
     Project.prototype.addSoftware = function (software) {
-        this.softwareList.push(software);
+        this.softwareList = this.softwareList.concat(software);
     };
     /**
      * Gets the card of the project which displays its name, description, link, languages and software

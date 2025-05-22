@@ -93,37 +93,32 @@ export class Loader {
         this.categories.push(applicationDevelopment, mobileDevelopment, webDevelopment, databases, others, conception, collaboration, bureautique);
 
         let portfolio: Project = new Project("Portfolio", "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !");
-        portfolio.addLink(new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/portfolio/"));
-        portfolio.addLanguage(html);
-        portfolio.addLanguage(css);
-        portfolio.addLanguage(typescript);
-        portfolio.addSoftware(webstorm);
+        portfolio.addLinks([new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/portfolio/")]);
+        portfolio.addLanguages([html, css, typescript]);
+        portfolio.addSoftware([webstorm]);
 
         let nesweeper: Project = new Project("NESweeper", "Démineur jouable sur Nintendo Entertainment System.");
-        nesweeper.addLink(new Link("Page itch.io", "https://hugo70.itch.io/nesweeper"));
-        nesweeper.addLanguage(assembly);
-        nesweeper.addSoftware(visualstudiocode);
+        nesweeper.addLinks([new Link("Page itch.io", "https://hugo70.itch.io/nesweeper")]);
+        nesweeper.addLanguages([assembly]);
+        nesweeper.addSoftware([visualstudiocode]);
 
         let cliofy: Project = new Project("Cliofy", "Application mobile utilisant l'API web de Spotify.");
-        cliofy.addLanguage(java);
-        cliofy.addSoftware(androidstudio);
+        cliofy.addLanguages([java]);
+        cliofy.addSoftware([androidstudio]);
 
         let lesdenaises: Project = new Project("Site web de la ferme Les Denaises", "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale.");
-        lesdenaises.addLink(new Link("Lien vers le site web", "https://www.lesdenaises.fr/"));
-        lesdenaises.addLanguage(html);
-        lesdenaises.addLanguage(css);
+        lesdenaises.addLinks([new Link("Lien vers le site web", "https://www.lesdenaises.fr/")]);
+        lesdenaises.addLanguages([html, css]);
 
         let projecteuler: Project = new Project("Résolution de problèmes mathématiques sur Project Euler", "Création de programmes Python pour résoudre des problèmes du site web Project Euler, qui répertorie des problèmes mathématiques conçus pour être résolus avec l'informatique.");
-        projecteuler.addLink(new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/project-euler/"));
-        projecteuler.addLink(new Link("Profil", "https://projecteuler.net/progress=Hugo_Pernin"));
-        projecteuler.addLanguage(python);
-        projecteuler.addSoftware(pycharm);
+        projecteuler.addLinks([new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/project-euler/"),
+            new Link("Profil", "https://projecteuler.net/progress=Hugo_Pernin")]);
+        projecteuler.addLanguages([python]);
+        projecteuler.addSoftware([pycharm]);
 
         let sae203: Project = new Project("Mise en place d'un serveur", "Sur une machine virtuelle VirtualBox, installation de Windows Server, d’un serveur web Apache, d’une base de données MySQL, d’un système de partage de fichiers et de Git, accessibles depuis la machine physique.");
-        sae203.addLink(new Link("Vidéo de présentation", "https://youtu.be/XkLdKJfYP1A"));
-        sae203.addSoftware(virtualbox);
-        sae203.addSoftware(xampp);
-        sae203.addSoftware(mysql);
+        sae203.addLinks([new Link("Vidéo de présentation", "https://youtu.be/XkLdKJfYP1A")]);
+        sae203.addSoftware([virtualbox, xampp, mysql]);
 
         this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler, sae203);
     }

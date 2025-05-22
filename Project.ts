@@ -25,27 +25,27 @@ export class Project {
     }
 
     /**
-     * Adds a link to the links list
-     * @param link link to add
+     * Adds links to the links list
+     * @param links links to add
      */
-    public addLink(link: Link) {
-        this.links.push(link);
+    public addLinks(links: Link[]) {
+        this.links = this.links.concat(links);
     }
 
     /**
-     * Adds a language to the languages list
-     * @param language language to add
+     * Adds languages to the languages list
+     * @param languages languages to add
      */
-    public addLanguage(language: Technology): void {
-        this.languagesList.push(language);
+    public addLanguages(languages: Technology[]): void {
+        this.languagesList = this.languagesList.concat(languages);
     }
 
     /**
-     * Adds a piece of software to the software list
-     * @param software piece of software to add
+     * Adds software to the software list
+     * @param software software to add
      */
-    public addSoftware(software: Technology): void {
-        this.softwareList.push(software);
+    public addSoftware(software: Technology[]): void {
+        this.softwareList = this.softwareList.concat(software);
     }
 
     /**
