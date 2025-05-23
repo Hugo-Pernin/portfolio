@@ -32,13 +32,13 @@ var Technology = /** @class */ (function () {
     Technology.prototype.getBigCard = function () {
         var bigCard = document.createElement("div");
         bigCard.classList.add("technology-big-card");
-        var name = document.createElement("p");
-        name.innerText = this.name;
-        bigCard.appendChild(name);
         var image = document.createElement("img");
         image.src = this.src;
         image.alt = "";
         bigCard.appendChild(image);
+        var name = document.createElement("p");
+        name.innerText = this.name;
+        bigCard.appendChild(name);
         return bigCard;
     };
     return Technology;

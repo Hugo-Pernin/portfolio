@@ -38,14 +38,14 @@ export class Technology {
         let bigCard: HTMLDivElement = document.createElement("div");
         bigCard.classList.add("technology-big-card");
 
-        let name: HTMLParagraphElement = document.createElement("p");
-        name.innerText = this.name;
-        bigCard.appendChild(name);
-
         let image: HTMLImageElement = document.createElement("img");
         image.src = this.src;
         image.alt = "";
         bigCard.appendChild(image);
+
+        let name: HTMLParagraphElement = document.createElement("p");
+        name.innerText = this.name;
+        bigCard.appendChild(name);
 
         return bigCard;
     }
