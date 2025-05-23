@@ -1,6 +1,7 @@
 import { Technology } from "./Technology.js";
 import { Project } from "./Project.js";
 import { TechnologyCategory } from "./TechnologyCategory.js";
+import { ProjectCategory } from "./ProjectCategory.js";
 import { Link } from "./Link.js";
 /**
  * Class that loads technologies and projects
@@ -9,7 +10,8 @@ var Loader = /** @class */ (function () {
     function Loader() {
         this.technologies = [];
         this.projects = [];
-        this.categories = [];
+        this.technologyCategories = [];
+        this.projectCategories = [];
         var python = new Technology("Python", "img/python.svg");
         var java = new Technology("Java", "img/java.svg");
         var csharp = new Technology("C#", "img/c_sharp.svg");
@@ -62,7 +64,7 @@ var Loader = /** @class */ (function () {
         collaboration.addTechnologies([git, teams]);
         var bureautique = new TechnologyCategory("Bureautique");
         bureautique.addTechnologies([wordexcelpowerpoint, googledocssheetsslides]);
-        this.categories.push(applicationDevelopment, mobileDevelopment, webDevelopment, databases, others, conception, collaboration, bureautique);
+        this.technologyCategories.push(applicationDevelopment, mobileDevelopment, webDevelopment, databases, others, conception, collaboration, bureautique);
         var portfolio = new Project("Portfolio", "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !");
         portfolio.addLinks([new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/portfolio/")]);
         portfolio.addLanguages([html, css, typescript]);
@@ -86,6 +88,13 @@ var Loader = /** @class */ (function () {
         sae203.addLinks([new Link("Vidéo de présentation", "https://youtu.be/XkLdKJfYP1A")]);
         sae203.addSoftware([virtualbox, xampp, mysql]);
         this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler, sae203);
+        var personalProjects = new ProjectCategory("Projets personnels");
+        personalProjects.addProjects([portfolio, nesweeper, cliofy, projecteuler]);
+        var schoolProjects = new ProjectCategory("Projets d'études");
+        schoolProjects.addProjects([sae203]);
+        var associativeProjects = new ProjectCategory("Projets associatifs");
+        associativeProjects.addProjects([lesdenaises]);
+        this.projectCategories.push(personalProjects, schoolProjects, associativeProjects);
     }
     /**
      * Returns the instance of Loader or creates one if it doesn't exist
@@ -116,7 +125,14 @@ var Loader = /** @class */ (function () {
      * @return the list of technology categories
      */
     Loader.prototype.getTechnologyCategories = function () {
-        return this.categories;
+        return this.technologyCategories;
+    };
+    /**
+     * Returns the list of project categories
+     * @return the list of project categories
+     */
+    Loader.prototype.getProjectCategories = function () {
+        return this.projectCategories;
     };
     return Loader;
 }());

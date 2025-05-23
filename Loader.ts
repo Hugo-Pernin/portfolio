@@ -1,6 +1,7 @@
 import {Technology} from "./Technology.js";
 import {Project} from "./Project.js";
 import {TechnologyCategory} from "./TechnologyCategory.js";
+import {ProjectCategory} from "./ProjectCategory.js";
 import {Link} from "./Link.js";
 
 /**
@@ -11,12 +12,14 @@ export class Loader {
 
     private technologies: Technology[];
     private projects: Project[];
-    private categories: TechnologyCategory[];
+    private technologyCategories: TechnologyCategory[];
+    private projectCategories: ProjectCategory[];
 
     private constructor() {
         this.technologies = [];
         this.projects = [];
-        this.categories = [];
+        this.technologyCategories = [];
+        this.projectCategories = [];
 
         let python: Technology = new Technology("Python", "img/python.svg");
         let java: Technology = new Technology("Java", "img/java.svg");
@@ -90,7 +93,7 @@ export class Loader {
         let bureautique: TechnologyCategory = new TechnologyCategory("Bureautique");
         bureautique.addTechnologies([wordexcelpowerpoint, googledocssheetsslides]);
 
-        this.categories.push(applicationDevelopment, mobileDevelopment, webDevelopment, databases, others, conception, collaboration, bureautique);
+        this.technologyCategories.push(applicationDevelopment, mobileDevelopment, webDevelopment, databases, others, conception, collaboration, bureautique);
 
         let portfolio: Project = new Project("Portfolio", "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !");
         portfolio.addLinks([new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/portfolio/")]);
@@ -121,6 +124,17 @@ export class Loader {
         sae203.addSoftware([virtualbox, xampp, mysql]);
 
         this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler, sae203);
+
+        let personalProjects: ProjectCategory = new ProjectCategory("Projets personnels");
+        personalProjects.addProjects([portfolio, nesweeper, cliofy, projecteuler]);
+
+        let schoolProjects: ProjectCategory = new ProjectCategory("Projets d'études");
+        schoolProjects.addProjects([sae203]);
+
+        let associativeProjects: ProjectCategory = new ProjectCategory("Projets associatifs");
+        associativeProjects.addProjects([lesdenaises]);
+
+        this.projectCategories.push(personalProjects, schoolProjects, associativeProjects);
     }
 
     /**
@@ -155,6 +169,14 @@ export class Loader {
      * @return the list of technology categories
      */
     public getTechnologyCategories(): TechnologyCategory[] {
-        return this.categories;
+        return this.technologyCategories;
+    }
+
+    /**
+     * Returns the list of project categories
+     * @return the list of project categories
+     */
+    public getProjectCategories(): ProjectCategory[] {
+        return this.projectCategories;
     }
 }
