@@ -60,7 +60,7 @@ export class Project {
         nameAndTechnologies.classList.add("name-and-technologies");
         card.appendChild(nameAndTechnologies);
 
-        let name: HTMLHeadingElement = document.createElement("h2");
+        let name: HTMLHeadingElement = document.createElement("h3");
         name.innerText = this.name;
         nameAndTechnologies.appendChild(name);
 

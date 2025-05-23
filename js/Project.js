@@ -45,7 +45,7 @@ var Project = /** @class */ (function () {
         var nameAndTechnologies = document.createElement("div");
         nameAndTechnologies.classList.add("name-and-technologies");
         card.appendChild(nameAndTechnologies);
-        var name = document.createElement("h2");
+        var name = document.createElement("h3");
         name.innerText = this.name;
         nameAndTechnologies.appendChild(name);
         var technologies = document.createElement("div");
