@@ -33,10 +33,12 @@ export class ProjectCategory {
         card.classList.add("project-category-card");
 
         let name: HTMLHeadingElement = document.createElement("h2");
+        name.classList.add("project-category-title");
         name.innerText = this.name;
         card.appendChild(name);
 
         let projects: HTMLDivElement = document.createElement("div");
+        projects.classList.add("project-category");
         for (let project of this.projects) {
             projects.appendChild(project.getCard());
         }

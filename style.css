@@ -1,20 +1,28 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
-    overflow-y: scroll;
+    overflow-y: scroll;                                 /* Always show scrollbar */
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+body {
+    margin: 0;                                          /* Remove default 8px margin */
 }
 
 main {
-    margin-top: 100px;
-    padding: 1%;
+    margin-top: 100px;                                  /* Margin so main isn't behind header */
+    padding: 0 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-block-start: 0;                              /* Remove default margin-block-start */
+    margin-block-end: 0;                                /* Remove default margin-block-end */
 }
 
 header {
-    position: fixed;
+    position: fixed;                                    /* Header is always shown on top of the page */
     top: 0;
     width: 100%;
     background-color: #153d63;
@@ -31,17 +39,18 @@ header {
 }
 
 #top-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;                              /* Remove default disc list-style-type */
+    margin-block-start: 0;                              /* Remove default 1em margin-block-start */
+    margin-block-end: 0;                                /* Remove default 1em margin-block-end */
+    padding-inline-start: 0;                            /* Remove default 40px padding-inline-start */
     display: flex;
 }
 
 #top-nav ul li a {
+    text-decoration: none;                              /* Remove default underline text-decoration */
     display: block;
     color: #ffffff;
     text-align: center;
-    text-decoration: none;
     padding: 14px 16px;
     transition: color 0.2s;
     border-top: 0.2rem solid #153d63;
@@ -54,21 +63,6 @@ header {
 
 #top-nav ul li a.active {
     border-bottom-color: #4c94d8;
-}
-
-h1 {
-    text-align: center;
-}
-
-.project-card {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    margin: 5% 10%;
-    padding: 1%;
-}
-
-.project-card h2 {
-    margin: 0;
 }
 
 .name-and-technologies {
@@ -100,7 +94,7 @@ h1 {
 }
 
 .technology-big-card {
-    background-color: #e0e0e0;
+    background-color: #f0f0f0;
     border-radius: 10px;
     margin: 0.5%;
     padding: 0.5%;
@@ -132,21 +126,8 @@ footer {
     padding-left: 1rem;
 }
 
-.skill-category-title {
-    margin: 1% 10%;
-}
-
-.skill-category {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    margin: 0 10%;
-    padding: 1%;
-}
-
 .skill-card {
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    padding: 1%;
+    /*background-color: #e0e0e0;*/
     display: inline-block;
 }
 
@@ -157,6 +138,7 @@ footer {
     width: 20%;
     transition: background-color 0.2s;
     margin-right: 1%;
+    padding: 0.5%;
 }
 
 .link-card a {
@@ -173,10 +155,21 @@ footer {
     background-color: #4c94d8;
 }
 
-.job-card, .qualification-card, .certification-card {
-    background-color: #f0f0f0;
+.project-card, .skill-card, .job-card, .qualification-card, .certification-card {
     border-radius: 10px;
     padding: 1%;
-    margin: 1% auto;
-    width: 50%;
+    margin: 1%;
+    background-color: #f0f0f0;
+}
+
+.project-category-card, .skill-category-card, .parcours-category-card {
+    margin-top: 4%;
+}
+
+.technology-category-card {
+    margin: 2% 1% 0;
+}
+
+.project-card p {
+    margin: 1% 0;
 }
