@@ -5,25 +5,32 @@ html, body {
 }
 
 main {
+    margin-top: 100px;
     padding: 1%;
 }
 
 header {
-    height: 46px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #153d63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #prenom-nom {
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: #ffffff;
 }
 
 #top-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #153d63;
+    display: flex;
 }
 
 #top-nav ul li a {
@@ -31,19 +38,18 @@ header {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    float: right;
     padding: 14px 16px;
-    transition: border-bottom-color 0.5s;
-    border-top: 0.2rem solid transparent;
-    border-bottom: 0.2rem solid transparent;
+    transition: color 0.2s;
+    border-top: 0.2rem solid #153d63;
+    border-bottom: 0.2rem solid #153d63;
 }
 
 #top-nav ul li a:hover {
-    border-bottom-color: #4c94d8;
+    color: #4c94d8;
 }
 
 #top-nav ul li a.active {
-    background-color: #04AA6D;
+    border-bottom-color: #4c94d8;
 }
 
 h1 {
