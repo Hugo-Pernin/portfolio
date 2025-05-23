@@ -42,34 +42,39 @@ var Project = /** @class */ (function () {
     Project.prototype.getCard = function () {
         var card = document.createElement("div");
         card.classList.add("project-card");
+        var nameAndTechnologies = document.createElement("div");
+        nameAndTechnologies.classList.add("name-and-technologies");
+        card.appendChild(nameAndTechnologies);
         var name = document.createElement("h2");
         name.innerText = this.name;
-        card.appendChild(name);
+        nameAndTechnologies.appendChild(name);
+        var technologies = document.createElement("div");
+        technologies.classList.add("technologies");
+        for (var _i = 0, _a = this.languages; _i < _a.length; _i++) {
+            var language = _a[_i];
+            technologies.appendChild(language.getSmallCard());
+        }
+        if ((this.languages.length > 0) && (this.software.length > 0)) {
+            var separator = document.createElement("p");
+            separator.classList.add("separator");
+            separator.innerText = "|";
+            technologies.appendChild(separator);
+        }
+        for (var _b = 0, _c = this.software; _b < _c.length; _b++) {
+            var software = _c[_b];
+            technologies.appendChild(software.getSmallCard());
+        }
+        nameAndTechnologies.appendChild(technologies);
         var description = document.createElement("p");
         description.innerText = this.description;
         card.appendChild(description);
         var links = document.createElement("div");
         links.classList.add("links");
-        for (var _i = 0, _a = this.links; _i < _a.length; _i++) {
-            var link = _a[_i];
+        for (var _d = 0, _e = this.links; _d < _e.length; _d++) {
+            var link = _e[_d];
             links.appendChild(link.getCard());
         }
         card.appendChild(links);
-        var technologies = document.createElement("div");
-        technologies.classList.add("technologies");
-        for (var _b = 0, _c = this.languages; _b < _c.length; _b++) {
-            var language = _c[_b];
-            technologies.appendChild(language.getSmallCard());
-        }
-        var separator = document.createElement("p");
-        separator.classList.add("separator");
-        separator.innerText = "|";
-        technologies.appendChild(separator);
-        for (var _d = 0, _e = this.software; _d < _e.length; _d++) {
-            var software = _e[_d];
-            technologies.appendChild(software.getSmallCard());
-        }
-        card.appendChild(technologies);
         return card;
     };
     return Project;

@@ -63,15 +63,35 @@ h1 {
     padding: 1%;
 }
 
+.project-card h2 {
+    margin: 0;
+}
+
+.name-and-technologies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technologies {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.separator {
+    margin: 0 5px;
+}
+
 .technology-small-card {
     background-color: #e0e0e0;
     border-radius: 10px;
-    margin: 0 1%;
-    padding: 1%;
+    margin: 0 5px;
+    padding: 5px;
 }
 
 .technology-small-card img {
-    height: 50px;
+    height: 40px;
     cursor: help;
 }
 
@@ -92,15 +112,6 @@ h1 {
 
 .technology-big-card p {
     margin: 0;
-}
-
-.technologies {
-    display: flex;
-    align-items: center;
-}
-
-.separator {
-    margin: 0 10px;
 }
 
 footer {

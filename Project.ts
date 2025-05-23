@@ -56,9 +56,29 @@ export class Project {
         let card: HTMLDivElement = document.createElement("div");
         card.classList.add("project-card");
 
+        let nameAndTechnologies: HTMLDivElement = document.createElement("div");
+        nameAndTechnologies.classList.add("name-and-technologies");
+        card.appendChild(nameAndTechnologies);
+
         let name: HTMLHeadingElement = document.createElement("h2");
         name.innerText = this.name;
-        card.appendChild(name);
+        nameAndTechnologies.appendChild(name);
+
+        let technologies: HTMLDivElement = document.createElement("div");
+        technologies.classList.add("technologies");
+        for (let language of this.languages) {
+            technologies.appendChild(language.getSmallCard());
+        }
+        if ((this.languages.length > 0) && (this.software.length > 0)) {
+            let separator: HTMLParagraphElement = document.createElement("p");
+            separator.classList.add("separator");
+            separator.innerText = "|";
+            technologies.appendChild(separator);
+        }
+        for (let software of this.software) {
+            technologies.appendChild(software.getSmallCard());
+        }
+        nameAndTechnologies.appendChild(technologies);
 
         let description: HTMLParagraphElement = document.createElement("p");
         description.innerText = this.description;
@@ -70,21 +90,6 @@ export class Project {
             links.appendChild(link.getCard());
         }
         card.appendChild(links);
-
-        let technologies: HTMLDivElement = document.createElement("div");
-        technologies.classList.add("technologies");
-        for (let language of this.languages) {
-            technologies.appendChild(language.getSmallCard());
-        }
-        let separator: HTMLParagraphElement = document.createElement("p");
-        separator.classList.add("separator");
-        separator.innerText = "|";
-        technologies.appendChild(separator);
-        for (let software of this.software) {
-            technologies.appendChild(software.getSmallCard());
-        }
-
-        card.appendChild(technologies);
 
         return card;
     }
