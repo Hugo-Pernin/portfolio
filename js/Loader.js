@@ -87,11 +87,27 @@ var Loader = /** @class */ (function () {
         var sae203 = new Project("Mise en place d'un serveur", "Sur une machine virtuelle VirtualBox, installation de Windows Server, d’un serveur web Apache, d’une base de données MySQL, d’un système de partage de fichiers et de Git, accessibles depuis la machine physique.");
         sae203.addLinks([new Link("Vidéo de présentation", "https://youtu.be/XkLdKJfYP1A")]);
         sae203.addSoftware([virtualbox, xampp, mysql]);
-        this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler, sae203);
+        var sae3 = new Project("Développement d'une application web de gestion de caves à vin", "Par équipe de 3, nous devions réaliser de 0 une application web. Une enseignante jouait le rôle de la cliente, avec laquelle nous avons eu plusieurs rendez-vous, afin d'établir le cahier des charges et montrer l'avancée du projet.\n" +
+            "Nous avons réalisé des diagrammes UML avec Visual Paradigm.\n" +
+            "Nous avons utilisé HTML, CSS et TypeScript pour le site, et nous avons également créé une API en C# communiquant avec une base de données SQLite.\n" +
+            "Le travail en équipe a été possible grâce à Teams et Git.");
+        sae3.addLanguages([html, css, typescript, csharp, uml]);
+        sae3.addSoftware([visualstudiocode, visualstudio, sqlite, visualparadigm, teams, git]);
+        var sae4 = new Project("Audit et optimisation d'une application web", "Par équipe de 4, nous avons audité puis optimisé une application de todo list appelée Taskstep, codée en PHP.\n" +
+            "L'audit et les optimisations ce sont articulées selon plusieurs domaines : la qualité logicielle, la sécurité, la gestion des données, les performances, l'impact environnemental, l'accessibilité et l'ergonomie.\n" +
+            "Personnellement, je me suis occupé des parties suivantes : \n" +
+            "- Passer le code en orienté objet (qualité logicielle),\n" +
+            "- Gérer les erreurs et les exceptions (qualité logicielle, sécurité, ergonomie),\n" +
+            "- Retirer la désactivation du mot de passe (sécurité),\n" +
+            "- Optimisation de requêtes SQL (gestion des données, performances, impact environnemental),\n" +
+            "- Corriger les contrastes insuffisants (accessibilité)");
+        sae4.addLanguages([php, typescript]);
+        sae4.addSoftware([mariadb, phpstorm, docker, teams, git]);
+        this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler, sae203, sae3, sae4);
         var personalProjects = new ProjectCategory("Projets personnels");
         personalProjects.addProjects([portfolio, nesweeper, cliofy, projecteuler]);
         var schoolProjects = new ProjectCategory("Projets d'études");
-        schoolProjects.addProjects([sae203]);
+        schoolProjects.addProjects([sae203, sae3, sae4]);
         var associativeProjects = new ProjectCategory("Projets associatifs");
         associativeProjects.addProjects([lesdenaises]);
         this.projectCategories.push(personalProjects, schoolProjects, associativeProjects);
