@@ -206,6 +206,12 @@ footer {
     padding: 1%;
     margin: 3%;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 #index-projects {
