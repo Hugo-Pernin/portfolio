@@ -194,3 +194,48 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#index-skill-categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-skill-category, .index-project {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#index-projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.index-link {
+    background-color: #153d63;
+    transition: background-color 0.2s;
+    border-radius: 20px;
+    width: 20%;
+    padding: 1%;
+    margin: 1% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.index-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#index>h1 {
+    margin: 10% 0;
+}
+
+#index>h2 {
+    margin-top: 5%;
+}
+
+#index>p {
+    margin: 1% 0;
+}
