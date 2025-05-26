@@ -197,16 +197,17 @@ footer {
 
 #index-skill-categories {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .index-skill-category, .index-project {
     /*background-color: #f0f0f0;*/
     border-radius: 10px;
     padding: 1%;
-    margin: 3%;
+    margin: 3% 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     animation: fadein 1s;
+    width: 25%;
 }
 
 @keyframes fadein {
@@ -271,6 +272,12 @@ a.index-language:hover {
     background-color: #e0e0e0;
 }
 
+.index-skill-category {
+    display: flex;
+    flex-direction: column;
+}
+
 .index-skill-category p {
     margin: 5% 0;
+    flex: 1;
 }
