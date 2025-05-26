@@ -7,18 +7,18 @@ body {
     margin: 0;                                          /* Remove default 8px margin */
 }
 
-main {
-    margin-top: 100px;                                  /* Margin so main isn't behind header */
-    padding: 0 10%;
+h2, h3, h4, h5, h6, p {
+    margin-block-start: 0;                              /* Remove default margin-block-start */
+    margin-block-end: 0;                                /* Remove default margin-block-end */
 }
 
 h1 {
     text-align: center;
+    margin: 10% 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin-block-start: 0;                              /* Remove default margin-block-start */
-    margin-block-end: 0;                                /* Remove default margin-block-end */
+main {
+    padding: 0 10%;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
 #prenom-nom {
     grid-column: 1;
     font-size: xx-large;
-    padding-left: 1%;
+    margin-left: 1%;
     color: #ffffff;
 }
 
