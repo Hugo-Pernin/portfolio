@@ -229,15 +229,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .index-link:hover {
     background-color: #4c94d8;
-}
-
-.index-link {
-    color: #ffffff;
-    text-decoration: none;
 }
 
 #index>h1 {
@@ -250,4 +247,30 @@ footer {
 
 #index>p {
     margin: 1% 0;
+}
+
+.index-languages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-language {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000000;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    margin: 1%;
+    padding: 0.75% 2.25%;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+a.index-language:hover {
+    background-color: #e0e0e0;
+}
+
+.index-skill-category p {
+    margin: 5% 0;
 }
