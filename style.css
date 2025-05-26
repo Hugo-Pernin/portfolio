@@ -281,3 +281,8 @@ a.index-language:hover {
     margin: 5% 0;
     flex: 1;
 }
+
+.pending-footer {
+    background-color: #153d63;
+    height: 3.25rem;
+}
