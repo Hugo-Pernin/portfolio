@@ -298,3 +298,35 @@ a.index-language:hover {
     background-color: #153d63;
     height: 3.25rem;
 }
+
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 0 2%;
+    }
+
+    #index-skill-categories, #index-projects {
+        flex-wrap: wrap;
+    }
+
+    .index-skill-category, .index-project {
+        width: auto;
+    }
+
+    .index-link {
+        width: 90%;
+    }
+
+    .technology-category-card {
+        width: 100%;
+    }
+}
