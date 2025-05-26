@@ -22,20 +22,26 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 header {
-    position: fixed;                                    /* Header is always shown on top of the page */
+    position: sticky;                                    /* Header is always shown on top of the page */
     top: 0;
-    width: 100%;
+    z-index: 99;
     background-color: #153d63;
-    display: flex;
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     justify-content: center;
     align-items: center;
 }
 
 #prenom-nom {
-    position: absolute;
-    top: 0;
-    left: 10px;
+    grid-column: 1;
+    font-size: xx-large;
+    padding-left: 1%;
     color: #ffffff;
+}
+
+#top-nav {
+    grid-column: 2;
 }
 
 #top-nav ul {
