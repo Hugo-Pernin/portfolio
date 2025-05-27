@@ -1,8 +1,9 @@
 var header = document.getElementsByTagName("header")[0];
 header.classList.remove("pending-header");
-var prenomNom = document.createElement("p");
+var prenomNom = document.createElement("a");
 prenomNom.id = "prenom-nom";
 prenomNom.innerText = "Hugo Pernin";
+prenomNom.href = "index.html";
 header.appendChild(prenomNom);
 var topNav = document.createElement("nav");
 topNav.id = "top-nav";

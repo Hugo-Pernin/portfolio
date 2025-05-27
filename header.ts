@@ -1,9 +1,10 @@
 let header: HTMLElement = document.getElementsByTagName("header")[0];
 header.classList.remove("pending-header");
 
-let prenomNom: HTMLParagraphElement = document.createElement("p");
+let prenomNom: HTMLAnchorElement = document.createElement("a");
 prenomNom.id = "prenom-nom";
 prenomNom.innerText = "Hugo Pernin";
+prenomNom.href = "index.html";
 header.appendChild(prenomNom);
 
 let topNav: HTMLElement = document.createElement("nav");
