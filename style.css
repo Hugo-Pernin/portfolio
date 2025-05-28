@@ -300,6 +300,15 @@ a.index-language:hover {
     height: 3.25rem;
 }
 
+.project-category {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 46%;
+}
+
 @media only screen and (max-width: 600px) {
     header {
         display: flex;
