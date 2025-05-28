@@ -43,6 +43,6 @@ liParcours.appendChild(aParcours);
 var liContact = document.createElement("li");
 ul.appendChild(liContact);
 var aContact = document.createElement("a");
-aContact.href = "#";
+aContact.href = "mailto:hugopernin70@gmail.com";
 aContact.innerText = "Contact";
 liContact.appendChild(aContact);

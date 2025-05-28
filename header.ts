@@ -58,6 +58,6 @@ let liContact: HTMLLIElement = document.createElement("li");
 ul.appendChild(liContact);
 
 let aContact: HTMLAnchorElement = document.createElement("a");
-aContact.href = "#";
+aContact.href = "mailto:hugopernin70@gmail.com";
 aContact.innerText = "Contact";
 liContact.appendChild(aContact);
