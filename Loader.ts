@@ -70,19 +70,16 @@ export class Loader {
             visualparadigm, git, teams, wordexcelpowerpoint, googledocssheetsslides);
 
         let applicationDevelopment: TechnologyCategory = new TechnologyCategory("Développement d'applications");
-        applicationDevelopment.addTechnologies([python, java, csharp, c, cplusplus, assembly, nodered, pycharm, visualstudio, visualstudiocode, arduino]);
-
-        let mobileDevelopment: TechnologyCategory = new TechnologyCategory("Développement mobile");
-        mobileDevelopment.addTechnologies([java, androidstudio]);
+        applicationDevelopment.addTechnologies([python, java, csharp, c, cplusplus, assembly, nodered]);
 
         let webDevelopment: TechnologyCategory = new TechnologyCategory("Développement web");
-        webDevelopment.addTechnologies([html, css, javascript, typescript, php, webstorm, phpstorm, xampp]);
+        webDevelopment.addTechnologies([html, css, javascript, typescript, php]);
 
         let databases: TechnologyCategory = new TechnologyCategory("Bases de données");
         databases.addTechnologies([mysql, plsql, mariadb, sqlite, mysqlworkbench, sqldeveloper]);
 
         let others: TechnologyCategory = new TechnologyCategory("Autres");
-        others.addTechnologies([unix, docker, virtualbox]);
+        others.addTechnologies([unix, docker, virtualbox, arduino, xampp]);
 
         let conception: TechnologyCategory = new TechnologyCategory("Conception");
         conception.addTechnologies([uml, visualparadigm]);
@@ -90,10 +87,13 @@ export class Loader {
         let collaboration: TechnologyCategory = new TechnologyCategory("Collaboration");
         collaboration.addTechnologies([git, teams]);
 
+        let ides: TechnologyCategory = new TechnologyCategory("IDEs & éditeurs de code");
+        ides.addTechnologies([pycharm, visualstudio, visualstudiocode, androidstudio, webstorm, phpstorm]);
+
         let bureautique: TechnologyCategory = new TechnologyCategory("Bureautique");
         bureautique.addTechnologies([wordexcelpowerpoint, googledocssheetsslides]);
 
-        this.technologyCategories.push(applicationDevelopment, mobileDevelopment, webDevelopment, databases, others, conception, collaboration, bureautique);
+        this.technologyCategories.push(applicationDevelopment, webDevelopment, databases, others, conception, collaboration, ides, bureautique);
 
         let portfolio: Project = new Project("Portfolio", "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !");
         portfolio.addLinks([new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/portfolio/")]);
