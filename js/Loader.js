@@ -49,7 +49,7 @@ var Loader = /** @class */ (function () {
         var googledocssheetsslides = new Technology("Google Docs, Sheets & Slides", "img/google_docs_sheets_slides.png");
         this.technologies.push(python, java, csharp, c, cplusplus, assembly, nodered, pycharm, visualstudio, visualstudiocode, arduino, androidstudio, html, css, javascript, typescript, php, webstorm, phpstorm, mysql, plsql, mariadb, sqlite, mysqlworkbench, sqldeveloper, unix, docker, virtualbox, uml, visualparadigm, git, teams, wordexcelpowerpoint, googledocssheetsslides);
         var applicationDevelopment = new TechnologyCategory("Développement d'applications");
-        applicationDevelopment.addTechnologies([python, java, csharp, c, cplusplus, assembly, nodered]);
+        applicationDevelopment.addTechnologies([python, java, csharp, c, cplusplus, nodered, assembly]);
         var webDevelopment = new TechnologyCategory("Développement web");
         webDevelopment.addTechnologies([html, css, javascript, typescript, php]);
         var databases = new TechnologyCategory("Bases de données");
@@ -61,7 +61,7 @@ var Loader = /** @class */ (function () {
         var collaboration = new TechnologyCategory("Collaboration");
         collaboration.addTechnologies([git, teams]);
         var ides = new TechnologyCategory("IDEs & éditeurs de code");
-        ides.addTechnologies([pycharm, visualstudio, visualstudiocode, androidstudio, webstorm, phpstorm]);
+        ides.addTechnologies([visualstudio, visualstudiocode, androidstudio, pycharm, webstorm, phpstorm]);
         var bureautique = new TechnologyCategory("Bureautique");
         bureautique.addTechnologies([wordexcelpowerpoint, googledocssheetsslides]);
         this.technologyCategories.push(applicationDevelopment, webDevelopment, databases, others, conception, collaboration, ides, bureautique);

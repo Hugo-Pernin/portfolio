@@ -70,7 +70,7 @@ export class Loader {
             visualparadigm, git, teams, wordexcelpowerpoint, googledocssheetsslides);
 
         let applicationDevelopment: TechnologyCategory = new TechnologyCategory("Développement d'applications");
-        applicationDevelopment.addTechnologies([python, java, csharp, c, cplusplus, assembly, nodered]);
+        applicationDevelopment.addTechnologies([python, java, csharp, c, cplusplus, nodered, assembly]);
 
         let webDevelopment: TechnologyCategory = new TechnologyCategory("Développement web");
         webDevelopment.addTechnologies([html, css, javascript, typescript, php]);
@@ -88,7 +88,7 @@ export class Loader {
         collaboration.addTechnologies([git, teams]);
 
         let ides: TechnologyCategory = new TechnologyCategory("IDEs & éditeurs de code");
-        ides.addTechnologies([pycharm, visualstudio, visualstudiocode, androidstudio, webstorm, phpstorm]);
+        ides.addTechnologies([visualstudio, visualstudiocode, androidstudio, pycharm, webstorm, phpstorm]);
 
         let bureautique: TechnologyCategory = new TechnologyCategory("Bureautique");
         bureautique.addTechnologies([wordexcelpowerpoint, googledocssheetsslides]);
