@@ -1,4 +1,4 @@
-import { Loader } from "./Loader.js";
+import { Loader } from "./model/Loader.js";
 var loader = Loader.getInstance();
 var categories = loader.getTechnologyCategories();
 var categoriesDiv = document.getElementById("langages-et-logiciels");

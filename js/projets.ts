@@ -1,5 +1,5 @@
-import {Loader} from "./Loader.js";
-import {ProjectCategory} from "./ProjectCategory.js";
+import {Loader} from "./model/Loader.js";
+import {ProjectCategory} from "./model/ProjectCategory.js";
 
 let loader: Loader = Loader.getInstance()
 

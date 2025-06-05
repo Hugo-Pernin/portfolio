@@ -1,4 +1,4 @@
-import {Technology} from "./Technology";
+import {Technology} from "./Technology.js";
 
 /**
  * A category of technologies

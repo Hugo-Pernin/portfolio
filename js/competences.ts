@@ -1,5 +1,5 @@
-import {Loader} from "./Loader.js";
-import {TechnologyCategory} from "./TechnologyCategory.js";
+import {Loader} from "./model/Loader.js";
+import {TechnologyCategory} from "./model/TechnologyCategory.js";
 
 let loader: Loader = Loader.getInstance()
 
