@@ -21,48 +21,48 @@ export class Loader {
         this.technologyCategories = [];
         this.projectCategories = [];
 
-        let python: Technology = new Technology("Python", "images/technology_logos/python.svg");
-        let java: Technology = new Technology("Java", "images/technology_logos/java.svg");
-        let csharp: Technology = new Technology("C#", "images/technology_logos/c_sharp.svg");
-        let c: Technology = new Technology("C", "images/technology_logos/c.svg");
-        let cplusplus: Technology = new Technology("C++", "images/technology_logos/c_plus_plus.svg");
-        let assembly: Technology = new Technology("Langage assembleur", "images/technology_logos/assembly.png");
-        let nodered: Technology = new Technology("Node-RED", "images/technology_logos/node-red.png");
-        let pycharm: Technology = new Technology("PyCharm", "images/technology_logos/pycharm.svg");
-        let visualstudio: Technology = new Technology("Visual Studio", "images/technology_logos/visual_studio.svg");
-        let visualstudiocode: Technology = new Technology("Visual Studio Code", "images/technology_logos/visual_studio_code.svg");
-        let arduino: Technology = new Technology("Arduino", "images/technology_logos/arduino.svg");
+        let python: Technology = new Technology("Python", "resources/images/technology_logos/python.svg");
+        let java: Technology = new Technology("Java", "resources/images/technology_logos/java.svg");
+        let csharp: Technology = new Technology("C#", "resources/images/technology_logos/c_sharp.svg");
+        let c: Technology = new Technology("C", "resources/images/technology_logos/c.svg");
+        let cplusplus: Technology = new Technology("C++", "resources/images/technology_logos/c_plus_plus.svg");
+        let assembly: Technology = new Technology("Langage assembleur", "resources/images/technology_logos/assembly.png");
+        let nodered: Technology = new Technology("Node-RED", "resources/images/technology_logos/node-red.png");
+        let pycharm: Technology = new Technology("PyCharm", "resources/images/technology_logos/pycharm.svg");
+        let visualstudio: Technology = new Technology("Visual Studio", "resources/images/technology_logos/visual_studio.svg");
+        let visualstudiocode: Technology = new Technology("Visual Studio Code", "resources/images/technology_logos/visual_studio_code.svg");
+        let arduino: Technology = new Technology("Arduino", "resources/images/technology_logos/arduino.svg");
 
-        let androidstudio: Technology = new Technology("Android Studio", "images/technology_logos/android_studio.svg");
+        let androidstudio: Technology = new Technology("Android Studio", "resources/images/technology_logos/android_studio.svg");
 
-        let html: Technology = new Technology("HTML", "images/technology_logos/html.svg");
-        let css: Technology = new Technology("CSS", "images/technology_logos/css.svg");
-        let javascript: Technology = new Technology("JavaScript", "images/technology_logos/javascript.svg");
-        let typescript: Technology = new Technology("TypeScript", "images/technology_logos/typescript.svg");
-        let php: Technology = new Technology("PHP", "images/technology_logos/php.svg");
-        let webstorm: Technology = new Technology("WebStorm", "images/technology_logos/webstorm.svg");
-        let phpstorm: Technology = new Technology("PHPStorm", "images/technology_logos/phpstorm.svg");
-        let xampp: Technology = new Technology("XAMPP", "images/technology_logos/xampp.png");
+        let html: Technology = new Technology("HTML", "resources/images/technology_logos/html.svg");
+        let css: Technology = new Technology("CSS", "resources/images/technology_logos/css.svg");
+        let javascript: Technology = new Technology("JavaScript", "resources/images/technology_logos/javascript.svg");
+        let typescript: Technology = new Technology("TypeScript", "resources/images/technology_logos/typescript.svg");
+        let php: Technology = new Technology("PHP", "resources/images/technology_logos/php.svg");
+        let webstorm: Technology = new Technology("WebStorm", "resources/images/technology_logos/webstorm.svg");
+        let phpstorm: Technology = new Technology("PHPStorm", "resources/images/technology_logos/phpstorm.svg");
+        let xampp: Technology = new Technology("XAMPP", "resources/images/technology_logos/xampp.png");
 
-        let mysql: Technology = new Technology("MySQL", "images/technology_logos/mysql.png");
-        let plsql: Technology = new Technology("PL/SQL", "images/technology_logos/plsql.svg");
-        let mariadb: Technology = new Technology("MariaDB", "images/technology_logos/mariadb.svg");
-        let sqlite: Technology = new Technology("SQLite", "images/technology_logos/sqlite.svg");
-        let mysqlworkbench: Technology = new Technology("MySQL Workbench", "images/technology_logos/mysql_workbench.svg");
-        let sqldeveloper: Technology = new Technology("SQL Developer", "images/technology_logos/sql_developer.svg");
+        let mysql: Technology = new Technology("MySQL", "resources/images/technology_logos/mysql.png");
+        let plsql: Technology = new Technology("PL/SQL", "resources/images/technology_logos/plsql.svg");
+        let mariadb: Technology = new Technology("MariaDB", "resources/images/technology_logos/mariadb.svg");
+        let sqlite: Technology = new Technology("SQLite", "resources/images/technology_logos/sqlite.svg");
+        let mysqlworkbench: Technology = new Technology("MySQL Workbench", "resources/images/technology_logos/mysql_workbench.svg");
+        let sqldeveloper: Technology = new Technology("SQL Developer", "resources/images/technology_logos/sql_developer.svg");
 
-        let unix: Technology = new Technology("Unix", "images/technology_logos/unix.svg");
-        let docker: Technology = new Technology("Docker", "images/technology_logos/docker.svg");
-        let virtualbox: Technology = new Technology("VirtualBox", "images/technology_logos/virtualbox.svg");
+        let unix: Technology = new Technology("Unix", "resources/images/technology_logos/unix.svg");
+        let docker: Technology = new Technology("Docker", "resources/images/technology_logos/docker.svg");
+        let virtualbox: Technology = new Technology("VirtualBox", "resources/images/technology_logos/virtualbox.svg");
 
-        let uml: Technology = new Technology("UML", "images/technology_logos/uml.svg");
-        let visualparadigm: Technology = new Technology("Visual Paradigm", "images/technology_logos/visual_paradigm.png");
+        let uml: Technology = new Technology("UML", "resources/images/technology_logos/uml.svg");
+        let visualparadigm: Technology = new Technology("Visual Paradigm", "resources/images/technology_logos/visual_paradigm.png");
 
-        let git: Technology = new Technology("Git", "images/technology_logos/git.svg");
-        let teams: Technology = new Technology("Teams", "images/technology_logos/teams.svg");
+        let git: Technology = new Technology("Git", "resources/images/technology_logos/git.svg");
+        let teams: Technology = new Technology("Teams", "resources/images/technology_logos/teams.svg");
 
-        let wordexcelpowerpoint: Technology = new Technology("Word, Excel & Powerpoint", "images/technology_logos/word_excel_powerpoint.svg");
-        let googledocssheetsslides: Technology = new Technology("Google Docs, Sheets & Slides", "images/technology_logos/google_docs_sheets_slides.png");
+        let wordexcelpowerpoint: Technology = new Technology("Word, Excel & Powerpoint", "resources/images/technology_logos/word_excel_powerpoint.svg");
+        let googledocssheetsslides: Technology = new Technology("Google Docs, Sheets & Slides", "resources/images/technology_logos/google_docs_sheets_slides.png");
 
         this.technologies.push(python, java, csharp, c, cplusplus, assembly, nodered, pycharm, visualstudio,
             visualstudiocode, arduino, androidstudio, html, css, javascript, typescript, php, webstorm, phpstorm,

@@ -24,7 +24,7 @@ var Link = /** @class */ (function () {
         var text = document.createElement("p");
         text.innerText = this.text;
         var image = document.createElement("img");
-        image.src = "images/new_tab.svg";
+        image.src = "resources/images/new_tab.svg";
         image.alt = "";
         link.appendChild(text);
         link.appendChild(image);
