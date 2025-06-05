@@ -15,7 +15,7 @@ github.target = "_blank";
 links.appendChild(github);
 
 let githubImage: HTMLImageElement = document.createElement("img");
-githubImage.src = "img/github.svg";
+githubImage.src = "images/github.svg";
 githubImage.alt = "GitHub";
 githubImage.title = "GitHub";
 github.appendChild(githubImage);
@@ -26,7 +26,7 @@ linkedin.target = "_blank";
 links.appendChild(linkedin);
 
 let linkedinImage: HTMLImageElement = document.createElement("img");
-linkedinImage.src = "img/linkedin.png";
+linkedinImage.src = "images/linkedin.png";
 linkedinImage.alt = "LinkedIn";
 linkedinImage.title = "LinkedIn";
 linkedin.appendChild(linkedinImage);

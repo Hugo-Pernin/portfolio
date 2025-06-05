@@ -31,7 +31,7 @@ export class Link {
         text.innerText = this.text;
 
         let image: HTMLImageElement = document.createElement("img");
-        image.src = "img/new_tab.svg";
+        image.src = "images/new_tab.svg";
         image.alt = "";
 
         link.appendChild(text);
