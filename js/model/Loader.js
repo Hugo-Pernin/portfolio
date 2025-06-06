@@ -91,8 +91,8 @@ var Loader = /** @class */ (function () {
             "Nous avons réalisé des diagrammes UML avec Visual Paradigm.\n" +
             "Nous avons utilisé HTML, CSS et TypeScript pour le site, et nous avons également créé une API en C# communiquant avec une base de données SQLite.\n" +
             "Le travail en équipe a été possible grâce à Teams et Git.");
-        sae3.addLanguages([html, css, typescript, csharp, uml]);
-        sae3.addSoftware([visualstudiocode, visualstudio, sqlite, visualparadigm, teams, git]);
+        sae3.addLanguages([html, css, typescript, csharp]);
+        sae3.addSoftware([visualstudiocode, visualstudio, sqlite]);
         var sae4 = new Project("Audit et optimisation d'une application web", "Par équipe de 4, nous avons audité puis optimisé une application de todo list appelée Taskstep, codée en PHP.\n" +
             "L'audit et les optimisations ce sont articulées selon plusieurs domaines : la qualité logicielle, la sécurité, la gestion des données, les performances, l'impact environnemental, l'accessibilité et l'ergonomie.\n" +
             "Personnellement, je me suis occupé des parties suivantes : \n" +
@@ -102,7 +102,7 @@ var Loader = /** @class */ (function () {
             "- Optimisation de requêtes SQL (gestion des données, performances, impact environnemental),\n" +
             "- Corriger les contrastes insuffisants (accessibilité)");
         sae4.addLanguages([php, typescript]);
-        sae4.addSoftware([mariadb, phpstorm, docker, teams, git]);
+        sae4.addSoftware([mariadb, phpstorm, docker]);
         this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler, sae203, sae3, sae4);
         var personalProjects = new ProjectCategory("Projets personnels");
         personalProjects.addProjects([portfolio, nesweeper, cliofy, projecteuler]);
