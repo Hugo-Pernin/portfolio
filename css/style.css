@@ -436,4 +436,39 @@ a.index-language:hover {
     .project-card {
         width: 100%;
     }
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 2%;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 93%;
+        margin-bottom: 5%;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    /*.container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }*/
+
+    .left::before, .right::before {
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+        left: -8px;
+    }
+
+    /* Make sure all circles are at the same spot */
+    /*.left::after, .right::after {
+        left: 15px;
+    }*/
+
+    /* Make all right containers behave like the left ones */
+    .left, .right {
+        left: 5%;
+    }
 }
