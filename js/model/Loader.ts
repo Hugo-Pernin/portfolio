@@ -101,11 +101,12 @@ export class Loader {
         portfolio.addSoftware([webstorm]);
 
         let nesweeper: Project = new Project("NESweeper", "Démineur jouable sur Nintendo Entertainment System.");
-        nesweeper.addLinks([new Link("Page itch.io", "https://hugo70.itch.io/nesweeper")]);
+        nesweeper.addLinks([new Link("Page itch.io", "https://hugo70.itch.io/nesweeper"), new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/nesweeper/")]);
         nesweeper.addLanguages([assembly]);
         nesweeper.addSoftware([visualstudiocode]);
 
         let cliofy: Project = new Project("Cliofy", "Application mobile utilisant l'API web de Spotify.");
+        cliofy.addLinks([new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/cliofy/")]);
         cliofy.addLanguages([java]);
         cliofy.addSoftware([androidstudio]);
 

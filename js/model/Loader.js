@@ -70,10 +70,11 @@ var Loader = /** @class */ (function () {
         portfolio.addLanguages([html, css, typescript]);
         portfolio.addSoftware([webstorm]);
         var nesweeper = new Project("NESweeper", "Démineur jouable sur Nintendo Entertainment System.");
-        nesweeper.addLinks([new Link("Page itch.io", "https://hugo70.itch.io/nesweeper")]);
+        nesweeper.addLinks([new Link("Page itch.io", "https://hugo70.itch.io/nesweeper"), new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/nesweeper/")]);
         nesweeper.addLanguages([assembly]);
         nesweeper.addSoftware([visualstudiocode]);
         var cliofy = new Project("Cliofy", "Application mobile utilisant l'API web de Spotify.");
+        cliofy.addLinks([new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/cliofy/")]);
         cliofy.addLanguages([java]);
         cliofy.addSoftware([androidstudio]);
         var lesdenaises = new Project("Site web de la ferme Les Denaises", "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale.");
