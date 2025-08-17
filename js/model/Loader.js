@@ -77,6 +77,8 @@ var Loader = /** @class */ (function () {
         cliofy.addLinks([new Link("Dépôt GitHub", "https://github.com/Hugo-Pernin/cliofy/")]);
         cliofy.addLanguages([java]);
         cliofy.addSoftware([androidstudio]);
+        var serveur = new Project("Création d'un serveur maison", "Création d'un serveur maison servant à stocker des fichiers.");
+        serveur.addLinks([new Link("Document d'explications", "../../resources/projet_serveur.pdf")]);
         var lesdenaises = new Project("Site web de la ferme Les Denaises", "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale.");
         lesdenaises.addLinks([new Link("Lien vers le site web", "https://www.lesdenaises.fr/")]);
         lesdenaises.addLanguages([html, css]);
@@ -106,7 +108,7 @@ var Loader = /** @class */ (function () {
         sae4.addSoftware([mariadb, phpstorm, docker]);
         this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler, sae203, sae3, sae4);
         var personalProjects = new ProjectCategory("Projets personnels");
-        personalProjects.addProjects([portfolio, nesweeper, cliofy, projecteuler]);
+        personalProjects.addProjects([portfolio, nesweeper, cliofy, projecteuler, serveur]);
         var schoolProjects = new ProjectCategory("Projets d'études");
         schoolProjects.addProjects([sae203, sae3, sae4]);
         var associativeProjects = new ProjectCategory("Projets associatifs");

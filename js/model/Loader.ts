@@ -110,6 +110,9 @@ export class Loader {
         cliofy.addLanguages([java]);
         cliofy.addSoftware([androidstudio]);
 
+        let serveur: Project = new Project("Création d'un serveur maison", "Création d'un serveur maison servant à stocker des fichiers.");
+        serveur.addLinks([new Link("Document d'explications", "../../resources/projet_serveur.pdf")]);
+
         let lesdenaises: Project = new Project("Site web de la ferme Les Denaises", "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale.");
         lesdenaises.addLinks([new Link("Lien vers le site web", "https://www.lesdenaises.fr/")]);
         lesdenaises.addLanguages([html, css]);
@@ -145,7 +148,7 @@ export class Loader {
         this.projects.push(portfolio, nesweeper, cliofy, lesdenaises, projecteuler, sae203, sae3, sae4);
 
         let personalProjects: ProjectCategory = new ProjectCategory("Projets personnels");
-        personalProjects.addProjects([portfolio, nesweeper, cliofy, projecteuler]);
+        personalProjects.addProjects([portfolio, nesweeper, cliofy, projecteuler, serveur]);
 
         let schoolProjects: ProjectCategory = new ProjectCategory("Projets d'études");
         schoolProjects.addProjects([sae203, sae3, sae4]);
