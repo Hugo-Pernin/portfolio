@@ -1,0 +1,29 @@
+[
+	{
+		"categoryName": "Compétences personnelles",
+		"skills": ["Rigueur", "Autonomie", "Fiabilité", "Curiosité"]
+	},
+	{
+		"categoryName": "Compétences techniques",
+		"skills": [
+			"Réaliser une conception",
+			"Recueillir et traduire les besoins client",
+			"Développer une application de bureau",
+			"Développer une application mobile",
+			"Développer un site web",
+			"Communiquer avec une base de données",
+			"Communiquer avec une API / un service web",
+			"Mettre en place un réseau informatique",
+			"Respecter les principes SOLID",
+			"Utiliser des design patterns",
+			"utiliser les architectures MVC et MVVM",
+			"Utiliser le paradigme orienté objet"
+		]
+	},
+	{
+		"categoryName": "Langues",
+		"skills": [
+			"Anglais B2 : excellente compréhension écrite, excellentes capacités rédactionnelles, capacités d'interaction orale"
+		]
+	}
+]

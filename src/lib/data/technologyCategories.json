@@ -1,0 +1,41 @@
+[
+	{
+		"categoryName": "Développement d'applications",
+		"technologies": ["Python", "Java", "C#", "C", "C++", "Node-RED", "Langage assembleur"]
+	},
+	{
+		"categoryName": "Développement web",
+		"technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "PHP"]
+	},
+	{
+		"categoryName": "Bases de données",
+		"technologies": ["MySQL", "PL/SQL", "MariaDB", "SQLite", "MySQL Workbench", "SQL Developer"]
+	},
+	{
+		"categoryName": "Autres",
+		"technologies": ["Unix", "Docker", "VirtualBox", "Arduino", "XAMPP"]
+	},
+	{
+		"categoryName": "Conception",
+		"technologies": ["UML", "Visual Paradigm"]
+	},
+	{
+		"categoryName": "Collaboration",
+		"technologies": ["Git", "Teams"]
+	},
+	{
+		"categoryName": "IDEs & éditeurs de code",
+		"technologies": [
+			"Visual Studio",
+			"Visual Studio Code",
+			"Android Studio",
+			"PyCharm",
+			"WebStorm",
+			"PHPStorm"
+		]
+	},
+	{
+		"categoryName": "Bureautique",
+		"technologies": ["Word, Excel & Powerpoint", "Google Docs, Sheets & Slides"]
+	}
+]

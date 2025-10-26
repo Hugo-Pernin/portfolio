@@ -1,0 +1,122 @@
+[
+	{
+		"categoryName": "Projets personnels",
+		"projects": [
+			{
+				"name": "Portfolio",
+				"description": "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !",
+				"links": [
+					{
+						"text": "Dépôt GitHub",
+						"href": "https://github.com/Hugo-Pernin/portfolio/"
+					}
+				],
+				"technologies": ["HTML", "CSS", "TypeScript", "WebStorm"]
+			},
+			{
+				"name": "NESweeper",
+				"description": "Démineur jouable sur Nintendo Entertainment System.",
+				"links": [
+					{
+						"text": "Page itch.io",
+						"href": "https://hugo70.itch.io/nesweeper"
+					},
+					{
+						"text": "Dépôt GitHub",
+						"href": "https://github.com/Hugo-Pernin/nesweeper/"
+					}
+				],
+				"technologies": ["Langage assembleur", "Visual Studio Code"]
+			},
+			{
+				"name": "Cliofy",
+				"description": "Application mobile utilisant l'API web de Spotify.",
+				"links": [
+					{
+						"text": "Dépôt GitHub",
+						"href": "https://github.com/Hugo-Pernin/cliofy/"
+					}
+				],
+				"technologies": ["Java", "Android Studio"]
+			},
+			{
+				"name": "Résolution de problèmes mathématiques sur Project Euler",
+				"description": "Création de programmes Python pour résoudre des problèmes du site web Project Euler, qui répertorie des problèmes mathématiques conçus pour être résolus avec l'informatique.",
+				"links": [
+					{
+						"text": "Dépôt GitHub",
+						"href": "https://github.com/Hugo-Pernin/project-euler/"
+					},
+					{
+						"text": "Profil",
+						"href": "https://projecteuler.net/progress=Hugo_Pernin"
+					}
+				],
+				"technologies": ["Python", "PyCharm"]
+			},
+			{
+				"name": "Création d'un serveur maison",
+				"description": "Création d'un serveur maison servant à stocker des fichiers.",
+				"links": [
+					{
+						"text": "Document d'explications",
+						"href": "/projet_serveur.pdf"
+					}
+				],
+				"technologies": []
+			}
+		]
+	},
+	{
+		"categoryName": "Projets d'études",
+		"projects": [
+			{
+				"name": "Mise en place d'un serveur",
+				"description": "Sur une machine virtuelle VirtualBox, installation de Windows Server, d'un serveur web Apache, d'une base de données MySQL, d'un système de partage de fichiers et de Git, accessibles depuis la machine physique.",
+				"links": [
+					{
+						"text": "Vidéo de présentation",
+						"href": "https://youtu.be/XkLdKJfYP1A"
+					}
+				],
+				"technologies": ["VirtualBox", "XAMPP", "MySQL"]
+			},
+			{
+				"name": "Développement d'une application web de gestion de caves à vin",
+				"description": "Par équipe de 3, nous devions réaliser de 0 une application web. Une enseignante jouait le rôle de la cliente, avec laquelle nous avons eu plusieurs rendez-vous, afin d'établir le cahier des charges et montrer l'avancée du projet.\nNous avons réalisé des diagrammes UML avec Visual Paradigm.\nNous avons utilisé HTML, CSS et TypeScript pour le site, et nous avons également créé une API en C# communiquant avec une base de données SQLite.\nLe travail en équipe a été possible grâce à Teams et Git.",
+				"links": [],
+				"technologies": [
+					"HTML",
+					"CSS",
+					"TypeScript",
+					"C#",
+					"Visual Studio Code",
+					"Visual Studio",
+					"SQLite"
+				]
+			},
+			{
+				"name": "Audit et optimisation d'une application web",
+				"description": "Par équipe de 4, nous avons audité puis optimisé une application de todo list appelée Taskstep, codée en PHP.\nL'audit et les optimisations ce sont articulées selon plusieurs domaines : la qualité logicielle, la sécurité, la gestion des données, les performances, l'impact environnemental, l'accessibilité et l'ergonomie.\nPersonnellement, je me suis occupé des parties suivantes :\n- Passer le code en orienté objet (qualité logicielle),\n- Gérer les erreurs et les exceptions (qualité logicielle, sécurité, ergonomie),\n- Retirer la désactivation du mot de passe (sécurité),\n- Optimisation de requêtes SQL (gestion des données, performances, impact environnemental),\n- Corriger les contrastes insuffisants (accessibilité)",
+				"links": [],
+				"technologies": ["PHP", "TypeScript", "MariaDB", "PHPStorm", "Docker"]
+			}
+		]
+	},
+	{
+		"categoryName": "Projets associatifs",
+		"projects": [
+			{
+				"name": "Site web de la ferme Les Denaises",
+				"description": "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale.",
+				"links": [
+					{
+						"text": "Lien vers le site web",
+						"href": "https://www.lesdenaises.fr/"
+					}
+				],
+				"technologies": ["HTML", "CSS"]
+			}
+		]
+	}
+]

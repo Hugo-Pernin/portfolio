@@ -1,0 +1,142 @@
+[
+	{
+		"name": "Python",
+		"img": "/images/technology_logos/python.svg"
+	},
+	{
+		"name": "Java",
+		"img": "/images/technology_logos/java.svg"
+	},
+	{
+		"name": "C#",
+		"img": "/images/technology_logos/c_sharp.svg"
+	},
+	{
+		"name": "C",
+		"img": "/images/technology_logos/c.svg"
+	},
+	{
+		"name": "C++",
+		"img": "/images/technology_logos/c_plus_plus.svg"
+	},
+	{
+		"name": "Node-RED",
+		"img": "/images/technology_logos/node-red.png"
+	},
+	{
+		"name": "Langage assembleur",
+		"img": "/images/technology_logos/assembly.png"
+	},
+	{
+		"name": "HTML",
+		"img": "/images/technology_logos/html.svg"
+	},
+	{
+		"name": "CSS",
+		"img": "/images/technology_logos/css.svg"
+	},
+	{
+		"name": "JavaScript",
+		"img": "/images/technology_logos/javascript.svg"
+	},
+	{
+		"name": "TypeScript",
+		"img": "/images/technology_logos/typescript.svg"
+	},
+	{
+		"name": "PHP",
+		"img": "/images/technology_logos/php.svg"
+	},
+	{
+		"name": "MySQL",
+		"img": "/images/technology_logos/mysql.png"
+	},
+	{
+		"name": "PL/SQL",
+		"img": "/images/technology_logos/plsql.svg"
+	},
+	{
+		"name": "MariaDB",
+		"img": "/images/technology_logos/mariadb.svg"
+	},
+	{
+		"name": "SQLite",
+		"img": "/images/technology_logos/sqlite.svg"
+	},
+	{
+		"name": "MySQL Workbench",
+		"img": "/images/technology_logos/mysql_workbench.svg"
+	},
+	{
+		"name": "SQL Developer",
+		"img": "/images/technology_logos/sql_developer.svg"
+	},
+	{
+		"name": "Unix",
+		"img": "/images/technology_logos/unix.svg"
+	},
+	{
+		"name": "Docker",
+		"img": "/images/technology_logos/docker.svg"
+	},
+	{
+		"name": "VirtualBox",
+		"img": "/images/technology_logos/virtualbox.svg"
+	},
+	{
+		"name": "Arduino",
+		"img": "/images/technology_logos/arduino.svg"
+	},
+	{
+		"name": "XAMPP",
+		"img": "/images/technology_logos/xampp.png"
+	},
+	{
+		"name": "UML",
+		"img": "/images/technology_logos/uml.svg"
+	},
+	{
+		"name": "Visual Paradigm",
+		"img": "/images/technology_logos/visual_paradigm.png"
+	},
+	{
+		"name": "Git",
+		"img": "/images/technology_logos/git.svg"
+	},
+	{
+		"name": "Teams",
+		"img": "/images/technology_logos/teams.svg"
+	},
+	{
+		"name": "Visual Studio",
+		"img": "/images/technology_logos/visual_studio.svg"
+	},
+	{
+		"name": "Visual Studio Code",
+		"img": "/images/technology_logos/visual_studio_code.svg"
+	},
+	{
+		"name": "Android Studio",
+		"img": "/images/technology_logos/android_studio.svg"
+	},
+	{
+		"name": "PyCharm",
+		"img": "/images/technology_logos/pycharm.svg"
+	},
+	{
+		"name": "WebStorm",
+		"img": "/images/technology_logos/webstorm.svg"
+	},
+	{
+		"name": "PHPStorm",
+		"img": "/images/technology_logos/phpstorm.svg"
+	},
+	{
+		"name": "Word, Excel & Powerpoint",
+		"img": "/images/technology_logos/word_excel_powerpoint.svg"
+	},
+	{
+		"name": "Google Docs, Sheets & Slides",
+		"img": "/images/technology_logos/google_docs_sheets_slides.png"
+	}
+]
