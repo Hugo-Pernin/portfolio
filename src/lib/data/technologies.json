@@ -44,6 +44,10 @@
 		"img": "/images/technology_logos/typescript.svg"
 	},
 	{
+		"name": "SvelteKit",
+		"img": "/images/technology_logos/svelte.svg"
+	},
+	{
 		"name": "PHP",
 		"img": "/images/technology_logos/php.svg"
 	},
