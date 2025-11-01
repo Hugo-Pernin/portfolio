@@ -2,6 +2,10 @@
 	import { resolve } from '$app/paths';
 </script>
 
+<svelte:head>
+	<title>Hugo Pernin - Portfolio</title>
+</svelte:head>
+
 <div id="index">
 	<h1>Hugo Pernin</h1>
 	<p>

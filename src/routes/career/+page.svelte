@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Hugo Pernin - Parcours</title>
+</svelte:head>
+
 <h1>Mon parcours</h1>
 
 <div class="timeline">

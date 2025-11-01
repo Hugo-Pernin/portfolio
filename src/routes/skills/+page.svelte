@@ -8,6 +8,10 @@
 	);
 </script>
 
+<svelte:head>
+	<title>Hugo Pernin - Compétences</title>
+</svelte:head>
+
 <h1>Mes compétences</h1>
 
 {#each skills as category (category)}

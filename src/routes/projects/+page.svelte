@@ -7,6 +7,10 @@
 	);
 </script>
 
+<svelte:head>
+	<title>Hugo Pernin - Projets</title>
+</svelte:head>
+
 <h1>Mes projets</h1>
 
 {#each projects as category (category)}
