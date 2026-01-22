@@ -11,7 +11,8 @@
 						"href": "https://github.com/Hugo-Pernin/portfolio/"
 					}
 				],
-				"technologies": ["HTML", "CSS", "TypeScript", "SvelteKit"]
+				"technologies": ["HTML", "CSS", "TypeScript", "SvelteKit"],
+				"year": 2025
 			},
 			{
 				"name": "NESweeper",
@@ -26,7 +27,8 @@
 						"href": "https://github.com/Hugo-Pernin/nesweeper/"
 					}
 				],
-				"technologies": ["Langage assembleur", "Visual Studio Code"]
+				"technologies": ["Langage assembleur", "Visual Studio Code"],
+				"year": 2024
 			},
 			{
 				"name": "Cliofy",
@@ -37,7 +39,8 @@
 						"href": "https://github.com/Hugo-Pernin/cliofy/"
 					}
 				],
-				"technologies": ["Java", "Android Studio"]
+				"technologies": ["Java", "Android Studio"],
+				"year": 2025
 			},
 			{
 				"name": "Résolution de problèmes mathématiques sur Project Euler",
@@ -52,7 +55,8 @@
 						"href": "https://projecteuler.net/progress=Hugo_Pernin"
 					}
 				],
-				"technologies": ["Python", "PyCharm"]
+				"technologies": ["Python", "PyCharm"],
+				"year": 2020
 			},
 			{
 				"name": "Création d'un serveur maison",
@@ -63,7 +67,8 @@
 						"href": "/projet_serveur.pdf"
 					}
 				],
-				"technologies": []
+				"technologies": [],
+				"year": 2025
 			}
 		]
 	},
@@ -79,7 +84,8 @@
 						"href": "https://youtu.be/XkLdKJfYP1A"
 					}
 				],
-				"technologies": ["VirtualBox", "XAMPP", "MySQL"]
+				"technologies": ["VirtualBox", "XAMPP", "MySQL"],
+				"year": 2024
 			},
 			{
 				"name": "Développement d'une application web de gestion de caves à vin",
@@ -93,13 +99,15 @@
 					"Visual Studio Code",
 					"Visual Studio",
 					"SQLite"
-				]
+				],
+				"year": 2024
 			},
 			{
 				"name": "Audit et optimisation d'une application web",
 				"description": "Par équipe de 4, nous avons audité puis optimisé une application de todo list appelée Taskstep, codée en PHP.\nL'audit et les optimisations ce sont articulées selon plusieurs domaines : la qualité logicielle, la sécurité, la gestion des données, les performances, l'impact environnemental, l'accessibilité et l'ergonomie.\nPersonnellement, je me suis occupé des parties suivantes :\n- Passer le code en orienté objet (qualité logicielle),\n- Gérer les erreurs et les exceptions (qualité logicielle, sécurité, ergonomie),\n- Retirer la désactivation du mot de passe (sécurité),\n- Optimisation de requêtes SQL (gestion des données, performances, impact environnemental),\n- Corriger les contrastes insuffisants (accessibilité)",
 				"links": [],
-				"technologies": ["PHP", "TypeScript", "MariaDB", "PHPStorm", "Docker"]
+				"technologies": ["PHP", "TypeScript", "MariaDB", "PHPStorm", "Docker"],
+				"year": 2025
 			}
 		]
 	},
@@ -115,7 +123,8 @@
 						"href": "https://www.lesdenaises.fr/"
 					}
 				],
-				"technologies": ["HTML", "CSS"]
+				"technologies": ["HTML", "CSS"],
+				"year": 2022
 			}
 		]
 	}
