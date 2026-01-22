@@ -8,24 +8,27 @@
 	<div class="container right">
 		<div class="content">
 			<h3>Alternant développeur (en cours)</h3>
+			<p class="place-and-year">Atol Conseils & Développements, Dijon | 2025-2026</p>
 			<p>
-				Atol Conseils & Développements, Dijon | 2025-2026
-				<br />Alternance dans le cadre de ma 3e année de BUT
+				Alternance dans le cadre de ma 3e année de BUT
+				<br />Participation au développement du projet
+				<a href="https://mesparcelles.fr/">MesParcelles</a>
 			</p>
 		</div>
 	</div>
 	<div class="container left">
 		<div class="content">
 			<h3>BUT Informatique (3e année en cours)</h3>
-			<p><i>IUT de Dijon</i> | 2023 – 2026</p>
+			<p class="place-and-year"><i>IUT de Dijon</i> | 2023 – 2026</p>
+			<p>Parcours RACDV : Réalisation d'Applications : Conception, Développement, Validation</p>
 		</div>
 	</div>
 	<div class="container right">
 		<div class="content">
 			<h3>Stage de développeur</h3>
+			<p class="place-and-year">Atol Conseils & Développements, Gevrey-Chambertin (21220) | 2025</p>
 			<p>
-				Atol Conseils & Développements, Gevrey-Chambertin (21220) | 2025
-				<br />Stage de 2e année de BUT (9 semaines)
+				Stage de 2e année de BUT (9 semaines)
 				<br />Travail sur la solution <a href="https://repplix.fr/" target="_blank">Repplix</a> :
 			</p>
 			<ul>
@@ -43,17 +46,16 @@
 	</div>
 	<div class="container left">
 		<div class="content">
-			<h3>Baccalauréat STI2D SIN mention <i>Très bien</i></h3>
-			<p><i>Lycée Augustin Cournot</i> | 2022 – 2023, Gray (70100)</p>
+			<h3>Baccalauréat STI2D mention <i>Très bien</i></h3>
+			<p class="place-and-year"><i>Lycée Augustin Cournot</i> | 2022 – 2023, Gray (70100)</p>
+			<p>Spécialité SIN : Systèmes d'Information & Numérique</p>
 		</div>
 	</div>
 	<div class="container right">
 		<div class="content">
 			<h3>Stage de technicien en maintenance informatique</h3>
-			<p>
-				Entreprise Fourot, Gray (70100) | 2020
-				<br />Stage de 3e (1 semaine)
-			</p>
+			<p class="place-and-year">Entreprise Fourot, Gray (70100) | 2020</p>
+			<p>Stage de 3e (1 semaine)</p>
 			<ul>
 				<li>Découverte de l’environnement professionnel</li>
 				<li>Diagnostic d’ordinateurs</li>
@@ -173,6 +175,14 @@
 		box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 		position: relative;
 		border-radius: 6px;
+	}
+
+	.content p {
+		margin-top: 1%;
+	}
+
+	.place-and-year {
+		color: #707070;
 	}
 
 	.parcours-category-card {
