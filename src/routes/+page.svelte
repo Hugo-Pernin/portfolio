@@ -8,6 +8,7 @@
 
 <div id="index">
 	<h1>Hugo Pernin</h1>
+	<p id="subtitle">Apprenti développeur informatique</p>
 	<p>
 		Étudiant en 3e année de BUT informatique, je suis passionné par la programmation depuis de
 		nombreuses années. Je m'intéresse à tout : développement de logiciels, de sites web,
@@ -126,7 +127,14 @@
 
 <style>
 	#index > h1 {
-		margin: 10% 0;
+		margin: 10% 0 2% 0;
+		font-size: 64px;
+	}
+
+	#index > #subtitle {
+		text-align: center;
+		margin-bottom: 10%;
+		font-size: 24px;
 	}
 
 	#index > h2 {
