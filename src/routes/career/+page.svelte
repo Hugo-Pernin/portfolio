@@ -16,7 +16,7 @@
 	</div>
 	<div class="container left">
 		<div class="content">
-			<h3>BUT Informatique (2e année en cours)</h3>
+			<h3>BUT Informatique (3e année en cours)</h3>
 			<p><i>IUT de Dijon</i> | 2023 – 2026</p>
 		</div>
 	</div>
