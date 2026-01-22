@@ -34,15 +34,20 @@
 						</div>
 					</div>
 					<p>{project.description}</p>
-					<div class="links">
-						{#each project.links as link (link)}
-							<div class="link-card">
-								<a href={link.href} target="_blank">
-									<p>{link.text}</p>
-									<img src="/images/new_tab.svg" alt="" />
-								</a>
-							</div>
-						{/each}
+					<div class="links-and-year">
+						<div class="links">
+							{#each project.links as link (link)}
+								<div class="link-card">
+									<a href={link.href} target="_blank">
+										<p>{link.text}</p>
+										<img src="/images/new_tab.svg" alt="" />
+									</a>
+								</div>
+							{/each}
+						</div>
+						<div class="year">
+							<p>{project.year}</p>
+						</div>
 					</div>
 				</div>
 			{/each}
@@ -66,6 +71,9 @@
 		margin: 1%;
 		background-color: #f0f0f0;
 		width: 46%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.name-and-technologies {
@@ -95,6 +103,20 @@
 	.project-card p {
 		margin: 1% 0;
 		white-space: pre-line;
+	}
+
+	.links-and-year {
+		display: flex;
+	}
+
+	.links {
+		flex: 1;
+	}
+
+	.year {
+		flex: 0;
+		display: flex;
+		align-items: end;
 	}
 
 	.link-card {
