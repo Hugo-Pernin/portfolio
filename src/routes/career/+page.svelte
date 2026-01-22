@@ -12,7 +12,7 @@
 			<p>
 				Alternance dans le cadre de ma 3e année de BUT
 				<br />Participation au développement du projet
-				<a href="https://mesparcelles.fr/">MesParcelles</a>
+				<a href="https://mesparcelles.fr/" target="_blank">MesParcelles</a>
 			</p>
 		</div>
 	</div>
