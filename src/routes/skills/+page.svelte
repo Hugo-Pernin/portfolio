@@ -2,6 +2,7 @@
 	import skills from '$lib/data/skills.json';
 	import technologyCategories from '$lib/data/technologyCategories.json';
 	import TechnologyCategoryCard from '$lib/components/TechnologyCategoryCard.svelte';
+	import SkillCard from '$lib/components/SkillCard.svelte';
 </script>
 
 <svelte:head>
@@ -15,7 +16,7 @@
 		<h2 class="skill-category-title">{category.categoryName}</h2>
 		<div class="skill-category">
 			{#each category.skills as skill (skill)}
-				<p class="skill-card">{skill}</p>
+				<SkillCard {skill} />
 			{/each}
 		</div>
 	</div>
@@ -33,14 +34,6 @@
 <style>
 	.skill-category-card {
 		margin-top: 4%;
-	}
-
-	.skill-card {
-		border-radius: 10px;
-		padding: 1%;
-		margin: 1%;
-		background-color: #f0f0f0;
-		display: inline-block;
 	}
 
 	#langages-et-logiciels {
