@@ -2,6 +2,7 @@
 	import TechnologySmallCard from '$lib/components/TechnologySmallCard.svelte';
 	import projects from '$lib/data/projects.json';
 	import technologies from '$lib/data/technologies.json';
+	import Link from '$lib/components/Link.svelte';
 
 	const technologiesMap = Object.fromEntries(
 		technologies.map((technology) => [technology.name, technology])
@@ -32,12 +33,7 @@
 					<div class="links-and-year">
 						<div class="links">
 							{#each project.links as link (link)}
-								<div class="link-card">
-									<a href={link.href} target="_blank">
-										<p>{link.text}</p>
-										<img src="/images/new_tab.svg" alt="" />
-									</a>
-								</div>
+								<Link {link} />
 							{/each}
 						</div>
 						<div class="year">
@@ -100,30 +96,6 @@
 		flex: 0;
 		display: flex;
 		align-items: end;
-	}
-
-	.link-card {
-		background-color: #153d63;
-		border-radius: 10px;
-		display: inline-flex;
-		width: 20%;
-		transition: background-color 0.2s;
-		margin-right: 1%;
-		padding: 0.5%;
-	}
-
-	.link-card a {
-		padding: 0 3%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		color: #ffffff;
-		text-decoration: none;
-		width: 100%;
-	}
-
-	.link-card:hover {
-		background-color: #4c94d8;
 	}
 
 	@media only screen and (max-width: 600px) {
