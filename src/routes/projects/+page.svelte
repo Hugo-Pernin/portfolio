@@ -1,12 +1,6 @@
 <script lang="ts">
-	import TechnologySmallCard from '$lib/components/TechnologySmallCard.svelte';
 	import projects from '$lib/data/projects.json';
-	import technologies from '$lib/data/technologies.json';
-	import Link from '$lib/components/Link.svelte';
-
-	const technologiesMap = Object.fromEntries(
-		technologies.map((technology) => [technology.name, technology])
-	);
+	import ProjectCard from '$lib/components/ProjectCard.svelte';
 </script>
 
 <svelte:head>
@@ -20,27 +14,7 @@
 		<h2>{category.categoryName}</h2>
 		<div class="project-category">
 			{#each category.projects as project (project)}
-				<div class="project-card">
-					<div class="name-and-technologies">
-						<h3>{project.name}</h3>
-						<div class="technologies">
-							{#each project.technologies as technology (technology)}
-								<TechnologySmallCard technology={technologiesMap[technology]} />
-							{/each}
-						</div>
-					</div>
-					<p>{project.description}</p>
-					<div class="links-and-year">
-						<div class="links">
-							{#each project.links as link (link)}
-								<Link {link} />
-							{/each}
-						</div>
-						<div class="year">
-							<p>{project.year}</p>
-						</div>
-					</div>
-				</div>
+				<ProjectCard {project} />
 			{/each}
 		</div>
 	</div>
