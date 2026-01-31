@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TechnologySmallCard from '$lib/components/TechnologySmallCard.svelte';
 	import projects from '$lib/data/projects.json';
 	import technologies from '$lib/data/technologies.json';
 
@@ -23,13 +24,7 @@
 						<h3>{project.name}</h3>
 						<div class="technologies">
 							{#each project.technologies as technology (technology)}
-								<div class="technology-small-card">
-									<img
-										src={technologiesMap[technology].img}
-										alt={technologiesMap[technology].name}
-										title={technologiesMap[technology].name}
-									/>
-								</div>
+								<TechnologySmallCard technology={technologiesMap[technology]} />
 							{/each}
 						</div>
 					</div>
@@ -86,18 +81,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-	}
-
-	.technology-small-card {
-		background-color: #e0e0e0;
-		border-radius: 10px;
-		margin: 0 5px;
-		padding: 5px;
-	}
-
-	.technology-small-card img {
-		height: 40px;
-		cursor: help;
 	}
 
 	.project-card p {
