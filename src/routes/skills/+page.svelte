@@ -2,6 +2,7 @@
 	import skills from '$lib/data/skills.json';
 	import technologyCategories from '$lib/data/technologyCategories.json';
 	import technologies from '$lib/data/technologies.json';
+	import TechnologyBigCard from '$lib/components/TechnologyBigCard.svelte';
 
 	const technologiesMap = Object.fromEntries(
 		technologies.map((technology) => [technology.name, technology])
@@ -33,10 +34,7 @@
 				<h3>{category.categoryName}</h3>
 				<div>
 					{#each category.technologies as technology (technology)}
-						<div class="technology-big-card">
-							<img src={technologiesMap[technology].img} alt="" />
-							<p>{technologiesMap[technology].name}</p>
-						</div>
+						<TechnologyBigCard technology={technologiesMap[technology]} />
 					{/each}
 				</div>
 			</div>
