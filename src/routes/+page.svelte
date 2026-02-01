@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import IndexButton from '$lib/components/IndexButton.svelte';
 </script>
 
 <svelte:head>
@@ -62,7 +63,7 @@
 			</div>
 		</div>
 	</div>
-	<a href={resolve('/skills')} class="index-link">Voir toutes mes compétences</a>
+	<IndexButton page="skills" text="Voir toutes mes compétences" />
 	<h2>Projets</h2>
 	<p>Voici quelques projets que j'ai pu réaliser :</p>
 	<div id="index-projects">
@@ -79,7 +80,7 @@
 			<a>GitHub</a>
 		</div>
 	</div>
-	<a href={resolve('/projects')} class="index-link">Voir tous mes projets</a>
+	<IndexButton page="projects" text="Voir tous mes projets" />
 	<h2>Parcours</h2>
 	<div class="timeline">
 		<div class="container right">
@@ -122,7 +123,7 @@
 			</div>
 		</div>
 	</div>
-	<a href={resolve('/career')} class="index-link">Voir tout mon parcours</a>
+	<IndexButton page="career" text="Voir tout mon parcours" />
 </div>
 
 <style>
@@ -191,25 +192,6 @@
 
 	a.index-language:hover {
 		background-color: #e0e0e0;
-	}
-
-	.index-link {
-		background-color: #153d63;
-		box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-		transition: background-color 0.2s;
-		border-radius: 20px;
-		width: 20%;
-		padding: 1%;
-		margin: 1% auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: #ffffff;
-		text-decoration: none;
-	}
-
-	.index-link:hover {
-		background-color: #4c94d8;
 	}
 
 	#index-projects {
@@ -327,10 +309,6 @@
 		.index-skill-category,
 		.index-project {
 			width: auto;
-		}
-
-		.index-link {
-			width: 90%;
 		}
 
 		/* Place the timelime to the left */
