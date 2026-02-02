@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import IndexButton from '$lib/components/IndexButton.svelte';
+	import jobsDiplomas from '$lib/data/jobsDiplomas.json';
+	import JobDiplomaCard from '$lib/components/JobDiplomaCard.svelte';
 </script>
 
 <svelte:head>
@@ -83,45 +85,9 @@
 	<IndexButton page="projects" text="Voir tous mes projets" />
 	<h2>Parcours</h2>
 	<div class="timeline">
-		<div class="container right">
-			<div class="content">
-				<h3>Alternant développeur (en cours)</h3>
-				<p>
-					Atol Conseils & Développements, Dijon | 2025-2026
-					<br />Alternance dans le cadre de ma 3e année de BUT
-				</p>
-			</div>
-		</div>
-		<div class="container left">
-			<div class="content">
-				<h3>BUT Informatique (3e année en cours)</h3>
-				<p><i>IUT de Dijon</i> | 2023 – 2026</p>
-			</div>
-		</div>
-		<div class="container right">
-			<div class="content">
-				<h3>Stage de développeur</h3>
-				<p>
-					Atol Conseils & Développements, Gevrey-Chambertin (21220) | 2025
-					<br />Stage de 2e année de BUT (9 semaines)
-				</p>
-			</div>
-		</div>
-		<div class="container left">
-			<div class="content">
-				<h3>Baccalauréat STI2D SIN mention <i>Très bien</i></h3>
-				<p><i>Lycée Augustin Cournot</i> | 2022 – 2023, Gray (70100)</p>
-			</div>
-		</div>
-		<div class="container right">
-			<div class="content">
-				<h3>Stage de technicien en maintenance informatique</h3>
-				<p>
-					Entreprise Fourot, Gray (70100) | 2020
-					<br />Stage de 3e (1 semaine)
-				</p>
-			</div>
-		</div>
+		{#each jobsDiplomas as jobDiploma, i (jobDiploma)}
+			<JobDiplomaCard {jobDiploma} isLeft={i % 2 == 1} showLongDescription={false} />
+		{/each}
 	</div>
 	<IndexButton page="career" text="Voir tout mon parcours" />
 </div>
@@ -219,78 +185,6 @@
 		border-radius: 50px;
 	}
 
-	/* Container around content */
-	.container {
-		width: 40%;
-		position: relative;
-	}
-
-	/* The circles on the timeline */
-	/*.container::after {*/
-	/*    content: '';*/
-	/*    position: absolute;*/
-	/*    width: 25px;*/
-	/*    height: 25px;*/
-	/*    right: -17px;*/
-	/*    background-color: white;*/
-	/*    border: 4px solid #FF9F55;*/
-	/*    top: 15px;*/
-	/*    border-radius: 50%;*/
-	/*    z-index: 1;*/
-	/*}*/
-
-	/* Place the container to the left */
-	.left {
-		left: calc(10% - 10px);
-	}
-
-	/* Place the container to the right */
-	.right {
-		left: calc(50% + 10px);
-	}
-
-	/* Add arrows to the left container (pointing right) */
-	.left::before {
-		content: ' ';
-		height: 0;
-		position: absolute;
-		top: 22px;
-		width: 0;
-		z-index: 1;
-		border: medium solid white;
-		border-width: 10px 0 10px 10px;
-		border-color: transparent transparent transparent white;
-		right: -10px;
-	}
-
-	/* Add arrows to the right container (pointing left) */
-	.right::before {
-		content: ' ';
-		height: 0;
-		position: absolute;
-		top: 22px;
-		width: 0;
-		z-index: 1;
-		border: medium solid white;
-		border-width: 10px 10px 10px 0;
-		border-color: transparent white transparent transparent;
-		left: -10px;
-	}
-
-	/* Fix the circle for containers on the right side */
-	/*.right::after {*/
-	/*    left: -16px;*/
-	/*}*/
-
-	/* The actual content */
-	.content {
-		padding: 20px 30px;
-		background-color: #ffffff;
-		box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-		position: relative;
-		border-radius: 6px;
-	}
-
 	@keyframes fadein {
 		from {
 			opacity: 0;
@@ -314,38 +208,6 @@
 		/* Place the timelime to the left */
 		.timeline::after {
 			left: 2%;
-		}
-
-		/* Full-width containers */
-		.container {
-			width: 93%;
-			margin-bottom: 5%;
-		}
-
-		/* Make sure that all arrows are pointing leftwards */
-		/*.container::before {
-            left: 60px;
-            border: medium solid white;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent white transparent transparent;
-        }*/
-
-		.left::before,
-		.right::before {
-			border-width: 10px 10px 10px 0;
-			border-color: transparent white transparent transparent;
-			left: -8px;
-		}
-
-		/* Make sure all circles are at the same spot */
-		/*.left::after, .right::after {
-            left: 15px;
-        }*/
-
-		/* Make all right containers behave like the left ones */
-		.left,
-		.right {
-			left: 5%;
 		}
 	}
 </style>
