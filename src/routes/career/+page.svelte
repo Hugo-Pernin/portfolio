@@ -1,6 +1,5 @@
 <script lang="ts">
-	import jobsDiplomas from '$lib/data/jobsDiplomas.json';
-	import JobDiplomaCard from '$lib/components/JobDiplomaCard.svelte';
+	import Timeline from '$lib/components/Timeline.svelte';
 </script>
 
 <svelte:head>
@@ -9,11 +8,7 @@
 
 <h1>Mon parcours</h1>
 
-<div class="timeline">
-	{#each jobsDiplomas as jobDiploma, i (jobDiploma)}
-		<JobDiplomaCard {jobDiploma} isLeft={i % 2 == 1} showLongDescription={true} />
-	{/each}
-</div>
+<Timeline showLongDescriptions={true} />
 <div class="parcours-category-card">
 	<h2>Certifications</h2>
 	<div class="certification-card">
@@ -34,26 +29,6 @@
 </div>
 
 <style>
-	/* The actual timeline (the vertical ruler) */
-	.timeline {
-		width: 100%;
-		position: relative;
-		margin: 5% 0;
-	}
-
-	/* The actual timeline (the vertical ruler) */
-	.timeline::after {
-		content: '';
-		position: absolute;
-		width: 6px;
-		background-color: #153d63;
-		top: 0;
-		bottom: 0;
-		left: 50%;
-		margin-left: -3px;
-		border-radius: 50px;
-	}
-
 	.parcours-category-card {
 		margin-top: 4%;
 	}
@@ -63,12 +38,5 @@
 		padding: 1%;
 		margin: 1%;
 		background-color: #f0f0f0;
-	}
-
-	@media only screen and (max-width: 600px) {
-		/* Place the timelime to the left */
-		.timeline::after {
-			left: 2%;
-		}
 	}
 </style>

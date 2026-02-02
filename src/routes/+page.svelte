@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import IndexButton from '$lib/components/IndexButton.svelte';
-	import jobsDiplomas from '$lib/data/jobsDiplomas.json';
-	import JobDiplomaCard from '$lib/components/JobDiplomaCard.svelte';
+	import Timeline from '$lib/components/Timeline.svelte';
 </script>
 
 <svelte:head>
@@ -84,11 +83,7 @@
 	</div>
 	<IndexButton page="projects" text="Voir tous mes projets" />
 	<h2>Parcours</h2>
-	<div class="timeline">
-		{#each jobsDiplomas as jobDiploma, i (jobDiploma)}
-			<JobDiplomaCard {jobDiploma} isLeft={i % 2 == 1} showLongDescription={false} />
-		{/each}
-	</div>
+	<Timeline showLongDescriptions={false} />
 	<IndexButton page="career" text="Voir tout mon parcours" />
 </div>
 
@@ -165,26 +160,6 @@
 		justify-content: space-around;
 	}
 
-	/* The actual timeline (the vertical ruler) */
-	.timeline {
-		width: 100%;
-		position: relative;
-		margin: 5% 0;
-	}
-
-	/* The actual timeline (the vertical ruler) */
-	.timeline::after {
-		content: '';
-		position: absolute;
-		width: 6px;
-		background-color: #153d63;
-		top: 0;
-		bottom: 0;
-		left: 50%;
-		margin-left: -3px;
-		border-radius: 50px;
-	}
-
 	@keyframes fadein {
 		from {
 			opacity: 0;
@@ -203,11 +178,6 @@
 		.index-skill-category,
 		.index-project {
 			width: auto;
-		}
-
-		/* Place the timelime to the left */
-		.timeline::after {
-			left: 2%;
 		}
 	}
 </style>
