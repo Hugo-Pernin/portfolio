@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type Project from '$lib/models/Project';
 	import TechnologySmallCard from './TechnologySmallCard.svelte';
-	import Link from './Link.svelte';
+	import LinkButton from './LinkButton.svelte';
 	import technologies from '$lib/data/technologies.json';
 
 	interface Props {
@@ -28,7 +28,7 @@
 	<div class="links-and-year">
 		<div class="links">
 			{#each props.project.links as link (link)}
-				<Link {link} />
+				<LinkButton {link} />
 			{/each}
 		</div>
 		<div class="year">
