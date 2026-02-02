@@ -1,0 +1,47 @@
+[
+	{
+		"title": "Alternant développeur (en cours)",
+		"etablishment": "Atol Conseils & Développements",
+		"city": "Dijon",
+		"beginningYear": 2025,
+		"endingYear": 2026,
+		"shortDescription": "Alternance dans le cadre de ma 3e année de BUT",
+		"longDescription": "<p>Participation au développement du projet <a href=\"https://mesparcelles.fr/\" target=\"_blank\">MesParcelles</a></p>"
+	},
+	{
+		"title": "BUT Informatique (3e année en cours)",
+		"etablishment": "IUT de Dijon",
+		"city": "",
+		"beginningYear": 2023,
+		"endingYear": 2026,
+		"shortDescription": "Parcours RACDV : Réalisation d'Applications : Conception, Développement, Validation",
+		"longDescription": ""
+	},
+	{
+		"title": "Stage de développeur",
+		"etablishment": "Atol Conseils & Développements",
+		"city": "Gevrey-Chambertin (21220)",
+		"beginningYear": 2025,
+		"endingYear": 2025,
+		"shortDescription": "Stage de 2e année de BUT (9 semaines)",
+		"longDescription": "<p>Travail sur la solution <a href=\"https://repplix.fr/\" target=\"_blank\">Repplix</a> :</p><ul><li>Création d'un tableau de bord Node-RED</li><li>Contrôle d'une carte Arduino reliée à une pince</li><li>Communication avec le système d'exploitation d'un robot industriel par MQTT</li></ul><p>Création d'une application web de réservation de bureaux :</p><ul><li>Codée en HTML, CSS et JavaScript</li><li>Connectée à une base de données SQLite</li><li>Conteneurisée avec Docker</li></ul>"
+	},
+	{
+		"title": "Baccalauréat STI2D mention Très bien",
+		"etablishment": "Lycée Augustin Cournot",
+		"city": "Gray (70100)",
+		"beginningYear": 2022,
+		"endingYear": 2023,
+		"shortDescription": "Spécialité SIN : Systèmes d'Information & Numérique",
+		"longDescription": ""
+	},
+	{
+		"title": "Stage de technicien en maintenance informatique",
+		"etablishment": "Entreprise Fourot",
+		"city": "Gray (70100)",
+		"beginningYear": 2020,
+		"endingYear": 2020,
+		"shortDescription": "Stage de 3e (1 semaine)",
+		"longDescription": "<ul><li>Découverte de l'environnement professionnel</li><li>Diagnostic d'ordinateurs</li><li>Montage d'ordinateurs</li><li>Dépannage de clients à domicile</li></ul>"
+	}
+]
