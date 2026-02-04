@@ -20,25 +20,22 @@
 		background-color: #153d63;
 		border-radius: 10px;
 		display: inline-flex;
-		width: 20%;
 		transition: background-color 0.2s;
 		margin-right: 1%;
-		padding: 0.5%;
+		padding: 0.5% 2%;
 	}
 
 	.link-card a {
-		padding: 0 3%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		color: #ffffff;
 		text-decoration: none;
-		width: 100%;
 	}
 
 	.link-card p {
-		margin: 1% 0;
-		white-space: pre-line;
+		white-space: nowrap;
+		margin-right: 5%;
 	}
 
 	.link-card:hover {
