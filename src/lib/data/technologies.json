@@ -142,5 +142,9 @@
 	{
 		"name": "Google Docs, Sheets & Slides",
 		"img": "/images/technology_logos/google_docs_sheets_slides.png"
+	},
+	{
+		"name": "ASP.NET",
+		"img": "/images/technology_logos/asp_net.png"
 	}
 ]

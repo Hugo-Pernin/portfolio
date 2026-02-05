@@ -5,7 +5,7 @@
 	},
 	{
 		"categoryName": "Développement web",
-		"technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "SvelteKit", "PHP"]
+		"technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "SvelteKit", "PHP", "ASP.NET"]
 	},
 	{
 		"categoryName": "Bases de données",

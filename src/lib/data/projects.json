@@ -91,7 +91,7 @@
 				"name": "Développement d'une application web de gestion de caves à vin",
 				"description": "Par équipe de 3, nous devions réaliser de 0 une application web. Une enseignante jouait le rôle de la cliente, avec laquelle nous avons eu plusieurs rendez-vous, afin d'établir le cahier des charges et montrer l'avancée du projet.\nNous avons réalisé des diagrammes UML avec Visual Paradigm.\nNous avons utilisé HTML, CSS et TypeScript pour le site, et nous avons également créé une API en C# communiquant avec une base de données SQLite.\nLe travail en équipe a été possible grâce à Teams et Git.",
 				"links": [],
-				"technologies": ["HTML", "CSS", "TypeScript", "C#", "SQLite"],
+				"technologies": ["HTML", "CSS", "TypeScript", "C#", "ASP.NET", "SQLite"],
 				"year": 2024
 			},
 			{
