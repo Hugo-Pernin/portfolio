@@ -13,7 +13,7 @@
 	},
 	{
 		"categoryName": "Autres",
-		"technologies": ["Unix", "Docker", "VirtualBox", "Arduino", "XAMPP"]
+		"technologies": ["Linux", "Docker", "VirtualBox", "Arduino", "XAMPP"]
 	},
 	{
 		"categoryName": "Conception",
