@@ -1,15 +1,42 @@
 [
 	{
 		"categoryName": "Développement d'applications",
-		"technologies": ["Python", "Java", "C#", "C", "C++", "Node-RED", "Langage assembleur"]
+		"technologies": [
+			"Python",
+			"Java",
+			"C#",
+			"C",
+			"C++",
+			"WPF",
+			"React Native",
+			"Node-RED",
+			"Langage assembleur"
+		]
 	},
 	{
 		"categoryName": "Développement web",
-		"technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "SvelteKit", "PHP", "ASP.NET"]
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"TypeScript",
+			"React",
+			"SvelteKit",
+			"PHP",
+			"ASP.NET"
+		]
 	},
 	{
 		"categoryName": "Bases de données",
-		"technologies": ["MySQL", "PL/SQL", "MariaDB", "SQLite", "MySQL Workbench", "SQL Developer"]
+		"technologies": [
+			"PostgreSQL",
+			"MySQL",
+			"PL/SQL",
+			"MariaDB",
+			"SQLite",
+			"MySQL Workbench",
+			"SQL Developer"
+		]
 	},
 	{
 		"categoryName": "Autres",
@@ -28,6 +55,7 @@
 		"technologies": [
 			"Visual Studio",
 			"Visual Studio Code",
+			"IntelliJ IDEA",
 			"Android Studio",
 			"PyCharm",
 			"WebStorm",

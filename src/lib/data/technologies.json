@@ -146,5 +146,25 @@
 	{
 		"name": "ASP.NET",
 		"img": "/images/technology_logos/asp_net.png"
+	},
+	{
+		"name": "WPF",
+		"img": "/images/technology_logos/wpf.png"
+	},
+	{
+		"name": "React",
+		"img": "/images/technology_logos/react.svg"
+	},
+	{
+		"name": "React Native",
+		"img": "/images/technology_logos/react_native.svg"
+	},
+	{
+		"name": "PostgreSQL",
+		"img": "/images/technology_logos/postgresql.svg"
+	},
+	{
+		"name": "IntelliJ IDEA",
+		"img": "/images/technology_logos/intellij_idea.svg"
 	}
 ]
