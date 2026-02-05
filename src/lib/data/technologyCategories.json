@@ -1,29 +1,29 @@
 [
 	{
-		"categoryName": "Développement d'applications",
-		"technologies": [
-			"Python",
-			"Java",
-			"C#",
-			"C",
-			"C++",
-			"WPF",
-			"React Native",
-			"Node-RED",
-			"Langage assembleur"
-		]
-	},
-	{
-		"categoryName": "Développement web",
+		"categoryName": "Front-end",
 		"technologies": [
 			"HTML",
 			"CSS",
 			"JavaScript",
 			"TypeScript",
-			"React",
 			"SvelteKit",
+			"React",
+			"React Native",
+			"WPF"
+		]
+	},
+	{
+		"categoryName": "Back-end",
+		"technologies": [
+			"Java",
 			"PHP",
-			"ASP.NET"
+			"Python",
+			"C",
+			"C++",
+			"C#",
+			"ASP.NET",
+			"Node-RED",
+			"Langage assembleur"
 		]
 	},
 	{
