@@ -59,15 +59,15 @@
 				"year": 2020
 			},
 			{
-				"name": "Création d'un serveur maison",
-				"description": "Création d'un serveur maison servant à stocker des fichiers.",
+				"name": "Serveur de stockage de fichiers maison",
+				"description": "Montage et configuration d'un serveur maison utilisé pour stocker des photos et vidéos : \n- Ajout de disques durs au serveur\n- Installation d'un système d'exploitation Linux (Debian)\n- Configuration d'un partage de fichiers SMB\n- Sécurisation des accès : uniquement depuis le réseau Wi-Fi et avec un compte",
 				"links": [
 					{
 						"text": "Document d'explications",
 						"href": "/projet_serveur.pdf"
 					}
 				],
-				"technologies": [],
+				"technologies": ["Linux"],
 				"year": 2025
 			}
 		]
