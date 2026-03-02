@@ -166,5 +166,9 @@
 	{
 		"name": "IntelliJ IDEA",
 		"img": "/images/technology_logos/intellij_idea.svg"
+	},
+	{
+		"name": "Spring Boot",
+		"img": "/images/technology_logos/spring_boot.svg"
 	}
 ]
