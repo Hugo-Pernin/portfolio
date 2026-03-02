@@ -158,5 +158,21 @@
 	{
 		"name": "Spring Boot",
 		"img": "/images/technology_logos/spring_boot.svg"
+	},
+	{
+		"name": "Docker Compose",
+		"img": "/images/technology_logos/docker_compose.png"
+	},
+	{
+		"name": "Scripts shell",
+		"img": "/images/technology_logos/scripts_shell.svg"
+	},
+	{
+		"name": "GitHub Actions",
+		"img": "/images/technology_logos/github_actions.png"
+	},
+	{
+		"name": "Gerrit",
+		"img": "/images/technology_logos/gerrit.svg"
 	}
 ]

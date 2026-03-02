@@ -33,7 +33,15 @@
 	},
 	{
 		"categoryName": "DevOps",
-		"technologies": ["Git", "Linux", "Docker"]
+		"technologies": [
+			"Git",
+			"Linux",
+			"Docker",
+			"Docker Compose",
+			"Scripts shell",
+			"GitHub Actions",
+			"Gerrit"
+		]
 	},
 	{
 		"categoryName": "Autres",
