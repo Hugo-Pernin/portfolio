@@ -32,16 +32,16 @@
 		"technologies": ["PostgreSQL", "MySQL", "PL/SQL", "MariaDB", "SQLite"]
 	},
 	{
+		"categoryName": "DevOps",
+		"technologies": ["Git", "Linux", "Docker"]
+	},
+	{
 		"categoryName": "Autres",
-		"technologies": ["Linux", "Docker", "VirtualBox", "Arduino", "XAMPP"]
+		"technologies": ["VirtualBox", "Arduino", "XAMPP"]
 	},
 	{
 		"categoryName": "Conception",
 		"technologies": ["UML", "Visual Paradigm"]
-	},
-	{
-		"categoryName": "Collaboration",
-		"technologies": ["Git"]
 	},
 	{
 		"categoryName": "IDEs & éditeurs de code",
