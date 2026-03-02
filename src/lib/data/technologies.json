@@ -68,14 +68,6 @@
 		"img": "/images/technology_logos/sqlite.svg"
 	},
 	{
-		"name": "MySQL Workbench",
-		"img": "/images/technology_logos/mysql_workbench.svg"
-	},
-	{
-		"name": "SQL Developer",
-		"img": "/images/technology_logos/sql_developer.svg"
-	},
-	{
 		"name": "Linux",
 		"img": "/images/technology_logos/linux.svg"
 	},
@@ -106,10 +98,6 @@
 	{
 		"name": "Git",
 		"img": "/images/technology_logos/git.svg"
-	},
-	{
-		"name": "Teams",
-		"img": "/images/technology_logos/teams.svg"
 	},
 	{
 		"name": "Visual Studio",

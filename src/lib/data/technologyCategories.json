@@ -29,15 +29,7 @@
 	},
 	{
 		"categoryName": "Bases de données",
-		"technologies": [
-			"PostgreSQL",
-			"MySQL",
-			"PL/SQL",
-			"MariaDB",
-			"SQLite",
-			"MySQL Workbench",
-			"SQL Developer"
-		]
+		"technologies": ["PostgreSQL", "MySQL", "PL/SQL", "MariaDB", "SQLite"]
 	},
 	{
 		"categoryName": "Autres",
@@ -49,7 +41,7 @@
 	},
 	{
 		"categoryName": "Collaboration",
-		"technologies": ["Git", "Teams"]
+		"technologies": ["Git"]
 	},
 	{
 		"categoryName": "IDEs & éditeurs de code",
