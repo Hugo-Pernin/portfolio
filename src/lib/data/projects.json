@@ -98,7 +98,7 @@
 				"name": "Audit et optimisation d'une application web de todo list",
 				"description": "Audit puis optimisation d'une application de todo list appelée Taskstep, codée en PHP : \n- Équipe de 4\n- 1 semaine d'audit, 1 semaine d'optimisation\n- Architecture MVC (Model-View-Controller)\nL'audit et les optimisations ce sont articulées selon plusieurs domaines : la qualité logicielle, la sécurité, la gestion des données, les performances, l'impact environnemental, l'accessibilité et l'ergonomie.\nPersonnellement, je me suis occupé des parties suivantes :\n- Audit de la qualité logicielle et des performances\n- Passer le code en orienté objet (qualité logicielle)\n- Gérer les erreurs et les exceptions (qualité logicielle, sécurité, ergonomie)\n- Retirer la désactivation du mot de passe (sécurité)\n- Optimisation de requêtes SQL (gestion des données, performances, impact environnemental)\n- Corriger les contrastes insuffisants (accessibilité)",
 				"links": [],
-				"technologies": ["PHP", "TypeScript", "MariaDB", "Docker"],
+				"technologies": ["PHP", "TypeScript", "MariaDB"],
 				"year": 2025
 			},
 			{
