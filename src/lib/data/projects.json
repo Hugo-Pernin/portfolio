@@ -4,7 +4,7 @@
 		"projects": [
 			{
 				"name": "Portfolio",
-				"description": "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !",
+				"description": "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !\nCodé d'abord en TypeScript sans framework, puis migré ensuite vers SvelteKit.",
 				"links": [
 					{
 						"text": "Dépôt GitHub",
@@ -16,7 +16,7 @@
 			},
 			{
 				"name": "NESweeper",
-				"description": "Démineur jouable sur Nintendo Entertainment System.",
+				"description": "Démineur jouable sur NES (Nintendo Entertainment System), codé entièrement en langage assembleur 6502.",
 				"links": [
 					{
 						"text": "Page itch.io",
@@ -32,7 +32,7 @@
 			},
 			{
 				"name": "Cliofy",
-				"description": "Application mobile utilisant l'API web de Spotify.",
+				"description": "Lecteur Spotify Android : \n- Communication avec l'API web Spotify\n- Utilisation du SDK Android Spotify\n- Back-end en Java\n- Front-end utilisant l'UI Android natif (layouts XML)",
 				"links": [
 					{
 						"text": "Dépôt GitHub",
@@ -88,15 +88,15 @@
 				"year": 2024
 			},
 			{
-				"name": "Développement d'une application web de gestion de caves à vin",
-				"description": "Par équipe de 3, nous devions réaliser de 0 une application web. Une enseignante jouait le rôle de la cliente, avec laquelle nous avons eu plusieurs rendez-vous, afin d'établir le cahier des charges et montrer l'avancée du projet.\nNous avons réalisé des diagrammes UML avec Visual Paradigm.\nNous avons utilisé HTML, CSS et TypeScript pour le site, et nous avons également créé une API en C# communiquant avec une base de données SQLite.\nLe travail en équipe a été possible grâce à Teams et Git.",
+				"name": "Application web de gestion de caves à vin",
+				"description": "Développement de 0 d'une application web de gestion de caves à vin : \n- Équipe de 3\n- Méthode agile\n- Réunions d'établissement du cahier des charges et d'avancement du projet avec la cliente jouée par une enseignante\n- 4 sprints d'une semaine\n- Réalisation de diagrammes UML\n- Client en TypeScript\n- API en C# ASP.NET\n- Architecture Controller-Service-Repository\n- Base de données SQLite",
 				"links": [],
 				"technologies": ["HTML", "CSS", "TypeScript", "C#", "ASP.NET", "SQLite"],
 				"year": 2024
 			},
 			{
-				"name": "Audit et optimisation d'une application web",
-				"description": "Par équipe de 4, nous avons audité puis optimisé une application de todo list appelée Taskstep, codée en PHP.\nL'audit et les optimisations ce sont articulées selon plusieurs domaines : la qualité logicielle, la sécurité, la gestion des données, les performances, l'impact environnemental, l'accessibilité et l'ergonomie.\nPersonnellement, je me suis occupé des parties suivantes :\n- Passer le code en orienté objet (qualité logicielle),\n- Gérer les erreurs et les exceptions (qualité logicielle, sécurité, ergonomie),\n- Retirer la désactivation du mot de passe (sécurité),\n- Optimisation de requêtes SQL (gestion des données, performances, impact environnemental),\n- Corriger les contrastes insuffisants (accessibilité)",
+				"name": "Audit et optimisation d'une application web de todo list",
+				"description": "Audit puis optimisation d'une application de todo list appelée Taskstep, codée en PHP : \n- Équipe de 4\n- 1 semaine d'audit, 1 semaine d'optimisation\n- Architecture MVC (Model-View-Controller)\nL'audit et les optimisations ce sont articulées selon plusieurs domaines : la qualité logicielle, la sécurité, la gestion des données, les performances, l'impact environnemental, l'accessibilité et l'ergonomie.\nPersonnellement, je me suis occupé des parties suivantes :\n- Audit de la qualité logicielle et des performances\n- Passer le code en orienté objet (qualité logicielle)\n- Gérer les erreurs et les exceptions (qualité logicielle, sécurité, ergonomie)\n- Retirer la désactivation du mot de passe (sécurité)\n- Optimisation de requêtes SQL (gestion des données, performances, impact environnemental)\n- Corriger les contrastes insuffisants (accessibilité)",
 				"links": [],
 				"technologies": ["PHP", "TypeScript", "MariaDB", "Docker"],
 				"year": 2025
@@ -108,7 +108,7 @@
 		"projects": [
 			{
 				"name": "Site web de la ferme Les Denaises",
-				"description": "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale.",
+				"description": "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale : \n- Recueil des besoins client\n- Réalisation de maquettes\n- Développement du site en HTML/CSS",
 				"links": [
 					{
 						"text": "Lien vers le site web",
