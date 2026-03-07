@@ -100,6 +100,13 @@
 				"links": [],
 				"technologies": ["PHP", "TypeScript", "MariaDB", "Docker"],
 				"year": 2025
+			},
+			{
+				"name": "Application de bureau de généalogie",
+				"description": "Développement d'une application de visualisation d'arbres généalogiques au format .gedcom : \n- Équipe de 5\n- Méthode agile (daily scrums)\n- Réunions avec le client joué par un enseignant\n- 2 sprints d'une semaine\n- Architecture MVVM (Model-View-ViewModel)\nTâches que j'ai effectuées : \n- Mise en place d'outils de CI/CD avec GitHub Actions : vérification du formatage et des tests unitaires à chaque pull request\n- Réalisation de diagrammes de séquence en UML\n- Développement de la sélection de fichier, des fonctions d'affichage de l'arbre et des fonctionnalités de déplacement et de zoom\n- Création de la page des paramètres\n- Implémentation des paramètres\n- Écriture de tests unitaires\n- Revues de code",
+				"links": [],
+				"technologies": ["C#", "WPF", "GitHub Actions"],
+				"year": 2025
 			}
 		]
 	},
