@@ -91,7 +91,7 @@
 				"name": "Application web de gestion de caves à vin",
 				"description": "Développement de 0 d'une application web de gestion de caves à vin : \n- Équipe de 3\n- Méthode agile\n- Réunions d'établissement du cahier des charges et d'avancement du projet avec la cliente jouée par une enseignante\n- 4 sprints d'une semaine\n- Réalisation de diagrammes UML\n- Client en TypeScript\n- API en C# ASP.NET\n- Architecture Controller-Service-Repository\n- Base de données SQLite",
 				"links": [],
-				"technologies": ["HTML", "CSS", "TypeScript", "C#", "ASP.NET", "SQLite"],
+				"technologies": ["TypeScript", "C#", "ASP.NET", "SQLite"],
 				"year": 2024
 			},
 			{
