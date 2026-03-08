@@ -136,5 +136,9 @@
 			flex-wrap: wrap;
 			justify-content: center;
 		}
+
+		footer {
+			padding: 1em;
+		}
 	}
 </style>
