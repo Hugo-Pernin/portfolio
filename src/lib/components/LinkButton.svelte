@@ -9,7 +9,7 @@
 	let props: Props = $props();
 </script>
 
-<div class="link-card">
+<div class="link-card" class:new-tab={props.newTab}>
 	<a href={props.link.href} target={props.newTab ? '_blank' : undefined}>
 		<p>{props.link.text}</p>
 		{#if props.newTab}
@@ -21,10 +21,15 @@
 <style>
 	.link-card {
 		background-color: #153d63;
-		border-radius: 10px;
 		display: inline-flex;
 		transition: background-color 0.2s;
 		margin-right: 1%;
+		border-radius: 20px;
+		padding: 0.4em 0.8em;
+	}
+
+	.link-card.new-tab {
+		border-radius: 10px;
 		padding: 0.21em 0.84em;
 	}
 
