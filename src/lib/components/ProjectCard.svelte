@@ -28,7 +28,7 @@
 	<div class="links-and-year">
 		<div class="links">
 			{#each props.project.links as link (link)}
-				<LinkButton {link} />
+				<LinkButton {link} newTab={true} />
 			{/each}
 		</div>
 		<div class="year">

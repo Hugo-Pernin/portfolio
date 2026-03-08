@@ -3,15 +3,18 @@
 
 	interface Props {
 		link: Link;
+		newTab: boolean;
 	}
 
 	let props: Props = $props();
 </script>
 
 <div class="link-card">
-	<a href={props.link.href} target="_blank">
+	<a href={props.link.href} target={props.newTab ? '_blank' : undefined}>
 		<p>{props.link.text}</p>
-		<img src="/images/new_tab.svg" alt="" />
+		{#if props.newTab}
+			<img src="/images/new_tab.svg" alt="" />
+		{/if}
 	</a>
 </div>
 
