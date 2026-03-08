@@ -93,7 +93,7 @@
 		display: block;
 		color: #ffffff;
 		text-align: center;
-		padding: 14px 16px;
+		padding: 0.88em 1em;
 		transition: color 0.2s;
 		border-top: 0.2rem solid #153d63;
 		border-bottom: 0.2rem solid #153d63;
@@ -113,13 +113,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 1% 10%;
+		padding: 1.2em 12em;
 		margin-top: 1%;
 	}
 
 	#footer-links img {
 		height: 3rem;
-		padding-left: 1rem;
+		padding-left: 1em;
 	}
 
 	@media only screen and (max-width: 600px) {
@@ -129,7 +129,7 @@
 		}
 
 		main {
-			padding: 0 2%;
+			padding: 0 0.51em;
 		}
 
 		#top-nav ul {

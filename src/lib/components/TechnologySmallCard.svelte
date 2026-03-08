@@ -17,7 +17,7 @@
 		background-color: #e0e0e0;
 		border-radius: 10px;
 		margin: 0 5px;
-		padding: 5px;
+		padding: 0.31em;
 	}
 
 	.technology-small-card img {

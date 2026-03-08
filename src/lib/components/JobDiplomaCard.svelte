@@ -78,7 +78,7 @@
 
 	/* The actual content */
 	.content {
-		padding: 20px 30px;
+		padding: 1.25em 1.88em;
 		background-color: #ffffff;
 		box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 		position: relative;

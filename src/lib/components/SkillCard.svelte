@@ -11,7 +11,7 @@
 <style>
 	.skill-card {
 		border-radius: 10px;
-		padding: 1%;
+		padding: 0.96em;
 		margin: 1%;
 		background-color: #f0f0f0;
 		display: inline-block;

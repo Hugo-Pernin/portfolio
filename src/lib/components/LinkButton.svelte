@@ -22,7 +22,7 @@
 		display: inline-flex;
 		transition: background-color 0.2s;
 		margin-right: 1%;
-		padding: 0.5% 2%;
+		padding: 0.21em 0.84em;
 	}
 
 	.link-card a {

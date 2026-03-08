@@ -19,7 +19,7 @@
 		background-color: #f0f0f0;
 		border-radius: 20px;
 		margin: 1%;
-		padding: 0.75% 2.25%;
+		padding: 0.17em 0.5em;
 		display: inline-flex;
 		align-items: center;
 	}

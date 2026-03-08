@@ -40,7 +40,7 @@
 <style>
 	.project-card {
 		border-radius: 10px;
-		padding: 1%;
+		padding: 0.72em;
 		margin: 1%;
 		background-color: #f0f0f0;
 		width: 46%;

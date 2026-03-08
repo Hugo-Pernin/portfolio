@@ -18,7 +18,7 @@
 		transition: background-color 0.2s;
 		border-radius: 20px;
 		width: 20%;
-		padding: 1%;
+		padding: 0.96em;
 		margin: 1% auto;
 		display: flex;
 		align-items: center;
