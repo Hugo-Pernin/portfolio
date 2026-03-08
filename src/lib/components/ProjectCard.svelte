@@ -15,7 +15,7 @@
 	);
 </script>
 
-<div class="project-card">
+<div class="project-card" id={props.project.name}>
 	<div class="name-and-technologies">
 		<h3>{props.project.name}</h3>
 		<div class="technologies">
@@ -47,6 +47,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		scroll-margin-top: 68px;
 	}
 
 	.name-and-technologies {
@@ -83,6 +84,7 @@
 	@media only screen and (max-width: 600px) {
 		.project-card {
 			width: 100%;
+			scroll-margin-top: 146px;
 		}
 	}
 </style>
