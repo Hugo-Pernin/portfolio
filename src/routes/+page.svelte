@@ -79,6 +79,11 @@
 			description="Site web statique présentant mes projets et compétences."
 			id="portfolio"
 		/>
+		<IndexProjectCard
+			title="Serveur maison"
+			description="Montage et configuration d'un serveur maison utilisé pour stocker des fichiers divers."
+			id="serveur"
+		/>
 	</div>
 	<IndexButton page="projects" text="Voir tous mes projets" />
 	<h2>Parcours</h2>
