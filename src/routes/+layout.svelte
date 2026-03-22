@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.png';
 	import '../app.css'; // CSS global
 	import { resolve } from '$app/paths';
 	import { afterNavigate } from '$app/navigation';
