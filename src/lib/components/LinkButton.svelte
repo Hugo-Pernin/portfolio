@@ -27,6 +27,7 @@
 		border-radius: 20px;
 		padding: 0.4em 0.8em;
 		position: relative;
+		width: fit-content;
 	}
 
 	.link-card.new-tab {

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import IndexButton from '$lib/components/IndexButton.svelte';
+	import IndexProjectCard from '$lib/components/IndexProjectCard.svelte';
 	import Timeline from '$lib/components/Timeline.svelte';
 </script>
 
@@ -68,18 +69,14 @@
 	<h2>Projets</h2>
 	<p>Voici quelques projets que j'ai pu réaliser :</p>
 	<div id="index-projects">
-		<div class="index-project">
-			<h3>Cliofy</h3>
-			<p>Application mobile</p>
-			<a>En savoir plus</a>
-			<a>GitHub</a>
-		</div>
-		<div class="index-project">
-			<h3>Portfolio</h3>
-			<p>Site web statique</p>
-			<a>En savoir plus</a>
-			<a>GitHub</a>
-		</div>
+		<IndexProjectCard
+			title="Cliofy"
+			description="Lecteur Spotify Android utilisant l'API web Spotify."
+		/>
+		<IndexProjectCard
+			title="Portfolio"
+			description="Site web statique présentant mes projets et compétences."
+		/>
 	</div>
 	<IndexButton page="projects" text="Voir tous mes projets" />
 	<h2>Parcours</h2>
@@ -112,8 +109,7 @@
 		justify-content: space-around;
 	}
 
-	.index-skill-category,
-	.index-project {
+	.index-skill-category {
 		/*background-color: #f0f0f0;*/
 		border-radius: 10px;
 		padding: 0.96em;
@@ -175,8 +171,7 @@
 			flex-wrap: wrap;
 		}
 
-		.index-skill-category,
-		.index-project {
+		.index-skill-category {
 			width: auto;
 		}
 	}
