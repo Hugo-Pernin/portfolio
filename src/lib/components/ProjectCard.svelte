@@ -47,7 +47,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		scroll-margin-top: 68px;
 	}
 
 	.name-and-technologies {
@@ -84,7 +83,6 @@
 	@media only screen and (max-width: 600px) {
 		.project-card {
 			width: 100%;
-			scroll-margin-top: 146px;
 		}
 	}
 </style>

@@ -2,15 +2,33 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css'; // CSS global
 	import { resolve } from '$app/paths';
+	import { afterNavigate } from '$app/navigation';
+	import { page } from '$app/stores';
 
 	let { children } = $props();
+
+	let header: HTMLElement;
+
+	// This code avoids to have the element hidden behind the header when using HTML anchors
+	afterNavigate(() => {
+		if ($page.url.hash) {
+			setTimeout(() => {
+				const targetElement = document.querySelector($page.url.hash);
+				if (targetElement && header) {
+					const headerHeight = header.offsetHeight;
+					const offset = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+					window.scrollTo({ top: offset });
+				}
+			}, 0);
+		}
+	});
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<header>
+<header bind:this={header}>
 	<a id="prenom-nom" href={resolve('/')}>Hugo Pernin</a>
 	<nav id="top-nav">
 		<ul>
