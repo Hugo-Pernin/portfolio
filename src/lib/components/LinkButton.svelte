@@ -26,6 +26,7 @@
 		margin-right: 1%;
 		border-radius: 20px;
 		padding: 0.4em 0.8em;
+		position: relative;
 	}
 
 	.link-card.new-tab {
@@ -39,6 +40,16 @@
 		align-items: center;
 		color: #ffffff;
 		text-decoration: none;
+	}
+
+	.link-card a::after {
+		/* Extends the link hitbox to all of the button */
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 
 	.link-card p {
