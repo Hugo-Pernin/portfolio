@@ -174,5 +174,9 @@
 	{
 		"name": "Gerrit",
 		"img": "/images/technology_logos/gerrit.svg"
+	},
+	{
+		"name": "Root Me",
+		"img": "/images/technology_logos/root_me.svg"
 	}
 ]

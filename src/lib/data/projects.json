@@ -74,6 +74,19 @@
 				],
 				"technologies": ["Linux"],
 				"year": 2025
+			},
+			{
+				"id": "root-me",
+				"name": "Root Me",
+				"description": "Résolution de challenges sur la plateforme Root Me, répertoriant des exercices pour tester ses compétences en cybersécurité.",
+				"links": [
+					{
+						"text": "Profil",
+						"href": "https://www.root-me.org/Hugo-Pernin"
+					}
+				],
+				"technologies": ["Root Me"],
+				"year": 2025
 			}
 		]
 	},
