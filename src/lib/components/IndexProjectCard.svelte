@@ -4,6 +4,7 @@
 	interface Props {
 		title: string;
 		description: string;
+		id: string;
 	}
 
 	let props: Props = $props();
@@ -12,7 +13,7 @@
 <div class="index-project">
 	<h3>{props.title}</h3>
 	<p>{props.description}</p>
-	<LinkButton link={{ text: 'En savoir plus', href: 'projects#' + props.title }} newTab={false} />
+	<LinkButton link={{ text: 'En savoir plus', href: 'projects#' + props.id }} newTab={false} />
 </div>
 
 <style>

@@ -3,6 +3,7 @@
 		"categoryName": "Projets personnels",
 		"projects": [
 			{
+				"id": "portfolio",
 				"name": "Portfolio",
 				"description": "Site web statique présentant mes projets et compétences. Vous êtes actuellement dessus !\nCodé d'abord en TypeScript sans framework, puis migré ensuite vers SvelteKit.",
 				"links": [
@@ -15,6 +16,7 @@
 				"year": 2025
 			},
 			{
+				"id": "nesweeper",
 				"name": "NESweeper",
 				"description": "Démineur jouable sur NES (Nintendo Entertainment System), codé entièrement en langage assembleur 6502.",
 				"links": [
@@ -31,6 +33,7 @@
 				"year": 2024
 			},
 			{
+				"id": "cliofy",
 				"name": "Cliofy",
 				"description": "Lecteur Spotify Android : \n- Communication avec l'API web Spotify\n- Utilisation du SDK Android Spotify\n- Back-end en Java\n- Front-end utilisant l'UI Android natif (layouts XML)",
 				"links": [
@@ -43,6 +46,7 @@
 				"year": 2025
 			},
 			{
+				"id": "project-euler",
 				"name": "Résolution de problèmes mathématiques sur Project Euler",
 				"description": "Création de programmes Python pour résoudre des problèmes du site web Project Euler, qui répertorie des problèmes mathématiques conçus pour être résolus avec l'informatique.",
 				"links": [
@@ -59,6 +63,7 @@
 				"year": 2020
 			},
 			{
+				"id": "serveur",
 				"name": "Serveur de stockage de fichiers maison",
 				"description": "Montage et configuration d'un serveur maison utilisé pour stocker des photos et vidéos : \n- Ajout de disques durs au serveur\n- Installation d'un système d'exploitation Linux (Debian)\n- Configuration d'un partage de fichiers SMB\n- Sécurisation des accès : uniquement depuis le réseau Wi-Fi et avec un compte",
 				"links": [
@@ -76,6 +81,7 @@
 		"categoryName": "Projets d'études",
 		"projects": [
 			{
+				"id": "s203",
 				"name": "Mise en place d'un serveur",
 				"description": "Sur une machine virtuelle VirtualBox, installation de Windows Server, d'un serveur web Apache, d'une base de données MySQL, d'un système de partage de fichiers et de Git, accessibles depuis la machine physique.",
 				"links": [
@@ -88,6 +94,7 @@
 				"year": 2024
 			},
 			{
+				"id": "s301",
 				"name": "Application web de gestion de caves à vin",
 				"description": "Développement de 0 d'une application web de gestion de caves à vin : \n- Équipe de 3\n- Méthode agile\n- Réunions d'établissement du cahier des charges et d'avancement du projet avec la cliente jouée par une enseignante\n- 4 sprints d'une semaine\n- Réalisation de diagrammes UML\n- Client en TypeScript\n- API en C# ASP.NET\n- Architecture Controller-Service-Repository\n- Base de données SQLite",
 				"links": [],
@@ -95,6 +102,7 @@
 				"year": 2024
 			},
 			{
+				"id": "s401",
 				"name": "Audit et optimisation d'une application web de todo list",
 				"description": "Audit puis optimisation d'une application de todo list appelée Taskstep, codée en PHP : \n- Équipe de 4\n- 1 semaine d'audit, 1 semaine d'optimisation\n- Architecture MVC (Model-View-Controller)\nL'audit et les optimisations ce sont articulées selon plusieurs domaines : la qualité logicielle, la sécurité, la gestion des données, les performances, l'impact environnemental, l'accessibilité et l'ergonomie.\nPersonnellement, je me suis occupé des parties suivantes :\n- Audit de la qualité logicielle et des performances\n- Passer le code en orienté objet (qualité logicielle)\n- Gérer les erreurs et les exceptions (qualité logicielle, sécurité, ergonomie)\n- Retirer la désactivation du mot de passe (sécurité)\n- Optimisation de requêtes SQL (gestion des données, performances, impact environnemental)\n- Corriger les contrastes insuffisants (accessibilité)",
 				"links": [],
@@ -102,6 +110,7 @@
 				"year": 2025
 			},
 			{
+				"id": "s501",
 				"name": "Application de bureau de généalogie",
 				"description": "Développement d'une application de visualisation d'arbres généalogiques au format .gedcom : \n- Équipe de 5\n- Méthode agile (daily scrums)\n- Réunions avec le client joué par un enseignant\n- 2 sprints d'une semaine\n- Architecture MVVM (Model-View-ViewModel)\nTâches que j'ai effectuées : \n- Mise en place d'outils de CI/CD avec GitHub Actions : vérification du formatage et des tests unitaires à chaque pull request\n- Réalisation de diagrammes de séquence en UML\n- Développement de la sélection de fichier, des fonctions d'affichage de l'arbre et des fonctionnalités de déplacement et de zoom\n- Création de la page des paramètres\n- Implémentation des paramètres\n- Écriture de tests unitaires\n- Revues de code",
 				"links": [],
@@ -114,6 +123,7 @@
 		"categoryName": "Projets associatifs",
 		"projects": [
 			{
+				"id": "les-denaises",
 				"name": "Site web de la ferme Les Denaises",
 				"description": "Site vitrine réalisé dans le cadre de mon année de terminale STI2D, en collaboration avec une ferme locale : \n- Recueil des besoins client\n- Réalisation de maquettes\n- Développement du site en HTML/CSS",
 				"links": [

@@ -15,7 +15,7 @@
 	);
 </script>
 
-<div class="project-card" id={props.project.name}>
+<div class="project-card" id={props.project.id}>
 	<div class="name-and-technologies">
 		<h3>{props.project.name}</h3>
 		<div class="technologies">

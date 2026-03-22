@@ -72,10 +72,12 @@
 		<IndexProjectCard
 			title="Cliofy"
 			description="Lecteur Spotify Android utilisant l'API web Spotify."
+			id="cliofy"
 		/>
 		<IndexProjectCard
 			title="Portfolio"
 			description="Site web statique présentant mes projets et compétences."
+			id="portfolio"
 		/>
 	</div>
 	<IndexButton page="projects" text="Voir tous mes projets" />
