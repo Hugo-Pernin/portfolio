@@ -129,6 +129,23 @@
 				"links": [],
 				"technologies": ["C#", "WPF", "GitHub Actions"],
 				"year": 2025
+			},
+			{
+				"id": "usine",
+				"name": "Station météo",
+				"description": "Création d'une station météo affichant la température, l'humidité et le taux de CO₂ de la pièce et alertant si une valeur est trop élevée : \n- Développement du programme en C++\n- Câblage de la carte Arduino et des capteurs\n- Modélisation 3D du boitier, moulable par injection",
+				"links": [
+					{
+						"text": "Vidéo de démonstration",
+						"href": "https://youtu.be/gbepqT7CawQ"
+					},
+					{
+						"text": "Photos",
+						"href": "/projet_station_meteo.pdf"
+					}
+				],
+				"technologies": ["C++", "Arduino", "SolidWorks"],
+				"year": 2022
 			}
 		]
 	},
