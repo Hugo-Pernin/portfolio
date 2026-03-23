@@ -45,7 +45,7 @@
 	},
 	{
 		"categoryName": "Autres",
-		"technologies": ["VirtualBox", "Arduino", "XAMPP"]
+		"technologies": ["VirtualBox", "Arduino", "XAMPP", "SolidWorks"]
 	},
 	{
 		"categoryName": "Conception",

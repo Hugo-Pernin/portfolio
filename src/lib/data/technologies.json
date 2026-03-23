@@ -178,5 +178,9 @@
 	{
 		"name": "Root Me",
 		"img": "/images/technology_logos/root_me.svg"
+	},
+	{
+		"name": "SolidWorks",
+		"img": "/images/technology_logos/solidworks.png"
 	}
 ]
