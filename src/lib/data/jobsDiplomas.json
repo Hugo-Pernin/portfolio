@@ -6,7 +6,7 @@
 		"beginningYear": 2025,
 		"endingYear": 2026,
 		"shortDescription": "Alternance dans le cadre de ma 3e année de BUT",
-		"longDescription": "<p>Participation au développement du projet <a href=\"https://mesparcelles.fr/\" target=\"_blank\">MesParcelles</a></p>"
+		"longDescription": "<p>Participation au développement du projet <a href=\"https://mesparcelles.fr/\" target=\"_blank\">MesParcelles</a>, solution de gestion parcellaire agricole :</p><ul><li>Ajout d'un module météo :<ul><li>Front-end web en React</li><li>Front-end mobile (Android & iOS) en React native</li><li>Ajout d'endpoints à l'API Java</li><li>Modification de la base de données PostgreSQL</li></ul></li><li>Maintenance :<ul><li>Évolutions sur un module préexistant</li><li>Tests de non-régression</li><li>Correction de bugs</li></ul></li><li>Travail en équipe :<ul><li>Participation aux réunions d'équipe</li><li>Revues de code sur Gerrit</li><li>Utilisation de Git</li></ul></li></ul>"
 	},
 	{
 		"title": "BUT Informatique (3e année en cours)",
@@ -24,7 +24,7 @@
 		"beginningYear": 2025,
 		"endingYear": 2025,
 		"shortDescription": "Stage de 2e année de BUT (9 semaines)",
-		"longDescription": "<p>Travail sur la solution <a href=\"https://repplix.fr/\" target=\"_blank\">Repplix</a> :</p><ul><li>Création d'un tableau de bord Node-RED</li><li>Contrôle d'une carte Arduino reliée à une pince</li><li>Communication avec le système d'exploitation d'un robot industriel par MQTT</li></ul><p>Création d'une application web de réservation de bureaux :</p><ul><li>Codée en HTML, CSS et JavaScript</li><li>Connectée à une base de données SQLite</li><li>Conteneurisée avec Docker</li></ul>"
+		"longDescription": "<p>Travail sur la solution <a href=\"https://repplix.fr/\" target=\"_blank\">Repplix</a>, logiciel de robotisation des activités de production par capture de mouvement :</p><ul><li>Création d'un tableau de bord Node-RED</li><li>Contrôle d'une carte Arduino reliée à une pince</li><li>Communication avec le système d'exploitation d'un robot industriel par MQTT</li></ul><p>Création d'une application web de réservation de bureaux :</p><ul><li>Codée en HTML, CSS et JavaScript</li><li>Connectée à une base de données SQLite</li><li>Conteneurisée avec Docker</li></ul>"
 	},
 	{
 		"title": "Baccalauréat STI2D mention Très bien",
